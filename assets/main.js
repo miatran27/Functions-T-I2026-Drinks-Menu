@@ -1,10 +1,12 @@
 let renderItems = (data) => {
-    let containerEl = document.querySelector('#drink-name')
+    let containerEl = document.querySelector('#mood')
     data.forEach(item => {
         let itemHtml = `
         <li>
-            <h2>${item['Mood']}</h2>
-            <p>${item['Drink name']}</p>
+            <h2>${item['mood']}</h2>
+            <p>${item['light']}</p>
+            <p>${item['pure']}</p>
+            <p>${item['intense']}</p>
         </li>
         `
 
@@ -17,6 +19,7 @@ fetch('assets/data.json')
 	.then(data => {
 		// And passes the data to the function, above!
 		// renderItems(data)
+        console.log(data)
         renderItems (data)
 	})
     

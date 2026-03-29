@@ -1,52 +1,32 @@
 [
   {
-    "Drink name": "Vervet Burn",
-    "Mood": "Bold",
-    "Cocktail": "Old fashion"
+    "mood": "Bold",
+    "light": "After Hours",
+    "pure": "Velvet Burn",
+    "intense": "Where It Ends"
   },
   {
-    "Drink name": "After Hours",
-    "Mood": "Bold/warm & cozy",
-    "Cocktail": "Black Manhattan"
+    "mood": "Warm & cozy",
+    "light": "Sunset Pour",
+    "pure": "Bright Ember",
+    "intense": "After Hours"
   },
   {
-    "Drink name": "Bright Ember",
-    "Mood": "Warm & cozy",
-    "Cocktail": "Whiskey Smash"
+    "mood": "Joyful",
+    "light": "Aurora Spritz",
+    "pure": "Tequila Sunrise",
+    "intense": "Sunset Pour"
   },
   {
-    "Drink name": "Sunset Pour",
-    "Mood": "Warm & cozy/joyful",
-    "Cocktail": "Golden Hour"
+    "mood": "Fresh & alive",
+    "light": "Aurora Spritz",
+    "pure": "Basil No.3",
+    "intense": "Tender Bloom"
   },
   {
-    "Drink name": "Tequila Sunrise",
-    "Mood": "Joyful",
-    "Cocktail": "Tequila Sunrise"
-  },
-  {
-    "Drink name": "Aurora Spritz",
-    "Mood": "Joyful/fresh & alive",
-    "Cocktail": "Hugo Spritz"
-  },
-  {
-    "Drink name": "Basil No.3",
-    "Mood": "Fresh & alive",
-    "Cocktail": "Basil Gimlet"
-  },
-  {
-    "Drink name": "Tender Bloom",
-    "Mood": "Fresh & alive/dreamy",
-    "Cocktail": "Pear Martini"
-  },
-  {
-    "Drink name": "Love In Haze",
-    "Mood": "Dreamy",
-    "Cocktail": "Purple Rain"
-  },
-  {
-    "Drink name": "Where It Ends",
-    "Mood": "Dreamy/bold",
-    "Cocktail": "Bramble"
+    "mood": "Dreamy",
+    "light": "Tender Bloom",
+    "pure": "Love In Haze",
+    "intense": "Where It Ends"
   }
 ]
