@@ -23,4 +23,3 @@ fetch('assets/data.json')
         renderItems (data)
 	})
     
-
