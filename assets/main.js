@@ -41,20 +41,48 @@ let form = document.querySelector('form')
     let slider = document.querySelector('#intensity')
     let intensityValue = Number(slider.value)
     let items = document.querySelectorAll('#mood li')
+    
+ // This helps clear previous selection data   
+    let modalResults = document.querySelector('#modal-results')
+    modalResults.innerHTML = ''
 
+// Setting up variable and the function to display the result
     items.forEach(item => {
         let itemMood = item.getAttribute('data-mood')
         let itemIntensity = Number(item.getAttribute('data-intensity'))
         if (itemMood === selectedMood && itemIntensity === intensityValue) {
             item.classList.add('active')
+            
+            let name = item.querySelector('h2').textContent
+            let mood = item.getAttribute('data-mood')
+            let intensityLabel = item.getAttribute('data-intensity-label')
+
+            modalResults.insertAdjacentHTML('beforeend', `<p>${name} - ${mood} - ${intensityLabel}</p>`)
         } else {
             item.classList.remove('active')
         }
     })
-  })
 
+//The line below is to open up my modal 
+modalDialog.showModal()
+})
 
+//Getting my modal set up
+let modalDialog = document.querySelector('#dialog')
+let closeButton = modalDialog.querySelector('button')
 
+closeButton.addEventListener('click', () => {
+    modalDialog.close()
+})
+
+//This allows user to click the area outside of the modal and modal can still close, without having to click the Close button
+document.addEventListener('click', (event) => {
+    if (event.target == document.documentElement) {
+        modalDialog.close()
+    }
+})
+
+  
 
 fetch('assets/data.json')
 	.then(response => response.json())
