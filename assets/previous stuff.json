@@ -1,0 +1,59 @@
+[
+  {
+    "mood": "Bold",
+    "light": "After Hours",
+    "pure": "Velvet Burn",
+    "intense": "Where It Ends"
+  },
+
+
+
+
+
+{
+  "name": "After Hours",
+  "description": "Rich and warming with a velvety texture.",
+  "ingredients": ["bourbon", "honey syrup", "lemon juice", "egg white"],
+  "image": "afterhours.jpg",
+  "moods": [
+    { "mood": "Bold", "intensity": "light" },
+    { "mood": "Warm and cozy", "intensity": "intense" }
+  ]
+}
+
+
+name: Whiskey Sour
+mood: warm
+intensity: 3
+
+name: Whiskey Sour
+mood: joyful
+intensity: 5
+
+
+
+  {
+    "mood": "Warm and cozy",
+    "light": "Sunset Pour",
+    "pure": "Bright Ember",
+    "intense": "After Hours"
+  },
+  {
+    "mood": "Joyful",
+    "light": "Aurora Spritz",
+    "pure": "Tequila Sunrise",
+    "intense": "Sunset Pour"
+  },
+  {
+    "mood": "Fresh and alive",
+    "light": "Aurora Spritz",
+    "pure": "Basil No.3",
+    "intense": "Tender Bloom"
+  },
+  {
+    "mood": "Dreamy",
+    "light": "Tender Bloom",
+    "pure": "Love In Haze",
+    "intense": "Where It Ends"
+  }
+]

@@ -10,14 +10,26 @@
 
     <body>
         <h1>Drinks Menu</h1>
-        <section>
-            <button id="bold">Bold</button>
-            <button id="warmandcozy">Warm and cozy</button>
-            <button id="joyful">Joyful</button>
-            <button id="freshandalive">Fresh and alive</button>
-            <button id="dreamy">Dreamy</button>
-        </section>
+        <form>
+            <section>
+                <button id="bold">Bold</button>
+                <button id="warmandcozy">Warm and cozy</button>
+                <button id="joyful">Joyful</button>
+                <button id="freshandalive">Fresh and alive</button>
+                <button id="dreamy">Dreamy</button>
+            </section>
+            <div id="slider-container">
+                <label for="intensity">How intense?</label>
+                <input type="range" id="intensity" min="0" max="3">
+            </div>
+        </form>
+
+
+            <div id="result"></div>
+
         <ul id="mood"></ul>
+
+ 
 
     </body>
 

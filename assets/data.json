@@ -1,32 +1,77 @@
 [
   {
+    "name": "Velvet Burn",
+    "mood": "bold",
+    "intensity": 2
+  },
+  {
+    "name": "After Hours",
     "mood": "Bold",
-    "light": "After Hours",
-    "pure": "Velvet Burn",
-    "intense": "Where It Ends"
+    "intensity": 1
   },
   {
+    "name": "After Hours",
     "mood": "Warm and cozy",
-    "light": "Sunset Pour",
-    "pure": "Bright Ember",
-    "intense": "After Hours"
+    "intensity": 3
   },
   {
+    "name": "Bright Ember",
+    "mood": "Warm and cozy",
+    "intensity": 2
+  },
+  {
+    "name": "Sunset Pour",
+    "mood": "Warm and cozy",
+    "intensity": 1
+  },
+  {
+    "name": "Sunset Pour",
     "mood": "Joyful",
-    "light": "Aurora Spritz",
-    "pure": "Tequila Sunrise",
-    "intense": "Sunset Pour"
+    "intensity": 3
   },
   {
+    "name": "Tequila Sunrise",
+    "mood": "Joyful",
+    "intensity": 2
+  },
+  {
+    "name": "Aurora Spritz",
+    "mood": "Joyful",
+    "intensity": 1
+  },
+  {
+    "name": "Aurora Spritz",
     "mood": "Fresh and alive",
-    "light": "Aurora Spritz",
-    "pure": "Basil No.3",
-    "intense": "Tender Bloom"
+    "intensity": 1
   },
   {
+    "name": "Basil No.3",
+    "mood": "Fresh and alive",
+    "intensity": 2
+  },
+  {
+    "name": "Tender Bloom",
+    "mood": "Fresh and alive",
+    "intensity": 3
+  },
+  {
+    "name": "Tender Bloom",
     "mood": "Dreamy",
-    "light": "Tender Bloom",
-    "pure": "Love In Haze",
-    "intense": "Where It Ends"
-  }
+    "intensity": 1
+  },
+  {
+    "name": "Purple Rain",
+    "mood": "Dreamy",
+    "intensity": 2
+  },
+  {
+    "name": "Where It Ends",
+    "mood": "Dreamy",
+    "intensity": 3
+  },
+  {
+    "name": "Where It Ends",
+    "mood": "Bold",
+    "intensity": 3
+  },
 ]

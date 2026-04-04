@@ -1,12 +1,18 @@
 let renderItems = (data) => {
     let containerEl = document.querySelector('#mood')
     data.forEach(item => {
+        let intensityLevel = item.intensity
+
+        if (intensityLevel === 1) {
+            intensityLevel = 'Light'
+        } else if (intensityLevel === 2) {
+            intensityLevel = 'Pure'
+        }
+
         let itemHtml = `
         <li>
-            <h2>${item['mood']}</h2>
-            <p>${item['light']}</p>
-            <p>${item['pure']}</p>
-            <p>${item['intense']}</p>
+            <h2>${item.name}</h2>
+            <p>${intensityLevel}</p>
         </li>
         `
 
@@ -20,6 +26,6 @@ fetch('assets/data.json')
 		// And passes the data to the function, above!
 		// renderItems(data)
         console.log(data)
-        renderItems (data)
+        renderItems(data)
 	})
     
