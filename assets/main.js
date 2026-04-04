@@ -58,7 +58,9 @@ let form = document.querySelector('form')
             let mood = item.getAttribute('data-mood')
             let intensityLabel = item.getAttribute('data-intensity-label')
 
-            modalResults.insertAdjacentHTML('beforeend', `<p>${name} - ${mood} - ${intensityLabel}</p>`)
+            modalResults.insertAdjacentHTML('beforeend', `
+                <h2>${name}</h2>
+                <p>${mood} - ${intensityLabel}</p>`)
         } else {
             item.classList.remove('active')
         }
