@@ -7,6 +7,8 @@ let renderItems = (data) => {
             intensityLevel = 'Light'
         } else if (intensityLevel === 2) {
             intensityLevel = 'Pure'
+        } else if (intensityLevel === 3) {
+            intensityLevel = 'Intense'
         }
 
         let itemHtml = `
@@ -15,7 +17,6 @@ let renderItems = (data) => {
             <p>${intensityLevel}</p>
         </li>
         `
-
         containerEl.insertAdjacentHTML('beforeend', itemHtml)
     })
 }
