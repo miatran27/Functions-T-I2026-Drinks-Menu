@@ -12,7 +12,7 @@ let renderItems = (data) => {
         }
 
         let itemHtml = `
-        <li>
+        <li data-mood="${item.mood}" data-intensity="${item.intensity}">
             <h2>${item.name}</h2>
             <p>${intensityLevel}</p>
         </li>
@@ -20,6 +20,42 @@ let renderItems = (data) => {
         containerEl.insertAdjacentHTML('beforeend', itemHtml)
     })
 }
+
+// Setting up variables for my mood buttons
+
+let selectedMood = null
+    let buttons = document.querySelectorAll('section button')
+    buttons.forEach(button => {
+    button.addEventListener('click', () => {
+        selectedMood = button.textContent
+    })
+    })
+
+// Submit button
+
+let form = document.querySelector('form')
+    form.addEventListener('submit', (event) => {
+    event.preventDefault()
+
+    let slider = document.querySelector('#intensity')
+    let intensityValue = Number(slider.value)
+    let items = document.querySelectorAll('#mood li')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 fetch('assets/data.json')
 	.then(response => response.json())
