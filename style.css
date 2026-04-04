@@ -1,0 +1,6 @@
+#mood li {
+    display: none;
+  }
+  #mood li.active {
+    display: block;
+  }

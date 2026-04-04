@@ -37,22 +37,21 @@ let form = document.querySelector('form')
     form.addEventListener('submit', (event) => {
     event.preventDefault()
 
+// Intensity slider
     let slider = document.querySelector('#intensity')
     let intensityValue = Number(slider.value)
     let items = document.querySelectorAll('#mood li')
 
-
-
-
-
-
-
-
-
-
-
-
-
+    items.forEach(item => {
+        let itemMood = item.getAttribute('data-mood')
+        let itemIntensity = Number(item.getAttribute('data-intensity'))
+        if (itemMood === selectedMood && itemIntensity === intensityValue) {
+            item.classList.add('active')
+        } else {
+            item.classList.remove('active')
+        }
+    })
+  })
 
 
 
