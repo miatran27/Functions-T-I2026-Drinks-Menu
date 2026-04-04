@@ -12,8 +12,9 @@ let renderItems = (data) => {
         }
 
         let itemHtml = `
-        <li data-mood="${item.mood}" data-intensity="${item.intensity}">
+        <li data-mood="${item.mood}" data-intensity="${item.intensity}" data-intensity-label="${intensityLevel}">
             <h2>${item.name}</h2>
+            <p>${item.mood}</p>
             <p>${intensityLevel}</p>
         </li>
         `

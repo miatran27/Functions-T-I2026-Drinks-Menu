@@ -1,5 +1,7 @@
 :root {
+  font-size: 100%;
 	--background-color: yellow;
+  --base: 1rem;
 }
 
 body {
@@ -9,6 +11,11 @@ body {
 #mood li {
     display: none;
   }
-#mood li.active {
-    display: block;
-  }
+
+
+/* Stops the page from scrolling when there is an open one: */
+body:has(dialog[open]) { overflow: hidden; }
+
+dialog {
+  background-color: white;
+}
