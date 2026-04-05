@@ -1,76 +1,121 @@
 [
   {
     "name": "Velvet Burn",
+    "ingredients": ["bourbon", "honey syrup", "lemon juice", "egg white"],
+    "description": "Rich and warming with a velvety texture.",
+    "image": "afterhours.jpg",
     "mood": "Bold",
     "intensity": 2
   },
   {
     "name": "After Hours",
+    "ingredients": ["bourbon", "honey syrup", "lemon juice", "egg white"],
+    "description": "Rich and warming with a velvety texture.",
+    "image": "afterhours.jpg",
     "mood": "Bold",
     "intensity": 1
   },
   {
     "name": "After Hours",
+    "ingredients": ["bourbon", "honey syrup", "lemon juice", "egg white"],
+    "description": "Rich and warming with a velvety texture.",
+    "image": "afterhours.jpg",
     "mood": "Warm and cozy",
     "intensity": 3
   },
   {
     "name": "Bright Ember",
+    "ingredients": ["bourbon", "honey syrup", "lemon juice", "egg white"],
+    "description": "Rich and warming with a velvety texture.",
+    "image": "afterhours.jpg",
     "mood": "Warm and cozy",
     "intensity": 2
   },
   {
     "name": "Sunset Pour",
+    "ingredients": ["bourbon", "honey syrup", "lemon juice", "egg white"],
+    "description": "Rich and warming with a velvety texture.",
+    "image": "afterhours.jpg",
     "mood": "Warm and cozy",
     "intensity": 1
   },
   {
     "name": "Sunset Pour",
+    "ingredients": ["bourbon", "honey syrup", "lemon juice", "egg white"],
+    "description": "Rich and warming with a velvety texture.",
+    "image": "afterhours.jpg",
     "mood": "Joyful",
     "intensity": 3
   },
   {
     "name": "Tequila Sunrise",
+    "ingredients": ["bourbon", "honey syrup", "lemon juice", "egg white"],
+    "description": "Rich and warming with a velvety texture.",
+    "image": "afterhours.jpg",
     "mood": "Joyful",
     "intensity": 2
   },
   {
     "name": "Aurora Spritz",
+    "ingredients": ["bourbon", "honey syrup", "lemon juice", "egg white"],
+    "description": "Rich and warming with a velvety texture.",
+    "image": "afterhours.jpg",
     "mood": "Joyful",
     "intensity": 1
   },
   {
     "name": "Aurora Spritz",
+    "ingredients": ["bourbon", "honey syrup", "lemon juice", "egg white"],
+    "description": "Rich and warming with a velvety texture.",
+    "image": "afterhours.jpg",
     "mood": "Fresh and alive",
     "intensity": 1
   },
   {
     "name": "Basil No.3",
+    "ingredients": ["bourbon", "honey syrup", "lemon juice", "egg white"],
+    "description": "Rich and warming with a velvety texture.",
+    "image": "afterhours.jpg",
     "mood": "Fresh and alive",
     "intensity": 2
   },
   {
     "name": "Tender Bloom",
+    "ingredients": ["bourbon", "honey syrup", "lemon juice", "egg white"],
+    "description": "Rich and warming with a velvety texture.",
+    "image": "afterhours.jpg",
     "mood": "Fresh and alive",
     "intensity": 3
   },
   {
     "name": "Tender Bloom",
+    "ingredients": ["bourbon", "honey syrup", "lemon juice", "egg white"],
+    "description": "Rich and warming with a velvety texture.",
+    "image": "afterhours.jpg",
     "mood": "Dreamy",
     "intensity": 1
   },
   {
     "name": "Purple Rain",
+    "ingredients": ["bourbon", "honey syrup", "lemon juice", "egg white"],
+    "description": "Rich and warming with a velvety texture.",
+    "image": "afterhours.jpg",
     "mood": "Dreamy",
     "intensity": 2
   },
   {
     "name": "Where It Ends",
+    "ingredients": ["bourbon", "honey syrup", "lemon juice", "egg white"],
+    "description": "Rich and warming with a velvety texture.",
+    "image": "afterhours.jpg",
     "mood": "Dreamy",
     "intensity": 3
   },
   {
     "name": "Where It Ends",
+    "ingredients": ["bourbon", "honey syrup", "lemon juice", "egg white"],
+    "description": "Rich and warming with a velvety texture.",
+    "image": "afterhours.jpg",
     "mood": "Bold",
     "intensity": 3
   }
