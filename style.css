@@ -7,7 +7,7 @@
 
 body {
     background-color: var(--background-color);
-    padding: var(--padding);
+    margin: 0;
   }
 
 #mood li {
@@ -53,6 +53,10 @@ dialog {
   flex-wrap: wrap;
 }
 
+.input-section{
+  padding: var(--padding);
+}
+
 form legend {
   text-align: center;
   padding-block-end: var(--base);
@@ -76,3 +80,17 @@ form legend {
   padding-block-start: calc(2 * var(--base));
 }
 
+/* Styling the hero */
+.hero {
+  background-color: white;
+  width: 100vw;
+  height: 60vh;
+}
+
+.wheel-section {
+  background-color: red;
+  height: 60vh;
+  & h2 {
+    margin-block-start: 0;
+}
+}

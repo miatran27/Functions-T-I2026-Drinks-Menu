@@ -10,25 +10,40 @@
 
 
     <body>
-        <h1>Drinks Menu</h1>
-        <form>
-            <legend>What's your mood today?</legend>
-            <section class="mood-buttons">
-                <button type="button" id="bold">Bold</button>
-                <button type="button" id="warmandcozy">Warm and cozy</button>
-                <button type="button" id="joyful">Joyful</button>
-                <button type="button" id="freshandalive">Fresh and alive</button>
-                <button type="button" id="dreamy">Dreamy</button>
-            </section>
-            <div class="slider-container">
-                <label for="intensity">Please drag the slider to select how strong you want your drink to be</label>
-                <input type="range" id="intensity" min="0" max="3">
-            </div>
+        <section class="hero">
+            <img src="Images/Hero image.png" alt="Hero image" class="heroimage">
 
-            <div class="submit-button">
-                <button type="submit">Submit</button>
-            </div>
-        </form>
+            <section class="herotext">
+                <h1>Drinks Menu</h1>
+                <p>Description for the drinks menu</p>
+            </section> 
+        </section>
+
+        <section class="wheel-section">
+            <h2>Wheel of Drinks</h2>
+            <img src="Images/Hero image.png" alt="Hero image" class="heroimage">
+        </section>
+
+        <section class="input-section">
+            <form>
+                <legend>What's your mood today?</legend>
+                    <section class="mood-buttons">
+                        <button type="button" id="bold">Bold</button>
+                        <button type="button" id="warmandcozy">Warm and cozy</button>
+                        <button type="button" id="joyful">Joyful</button>
+                        <button type="button" id="freshandalive">Fresh and alive</button>
+                        <button type="button" id="dreamy">Dreamy</button>
+                    </section>
+                <div class="slider-container">
+                    <label for="intensity">Please drag the slider to select how strong you want your drink to be</label>
+                    <input type="range" id="intensity" min="0" max="3">
+                </div>
+
+                <div class="submit-button">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </section>
 
         <ul id="mood"></ul>
 

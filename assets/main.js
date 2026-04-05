@@ -25,7 +25,7 @@ let renderItems = (data) => {
 // Setting up variables for my mood buttons
 
 let selectedMood = null
-    let buttons = document.querySelectorAll('section button')
+    let buttons = document.querySelectorAll('.mood-buttons button')
     buttons.forEach(button => {
     button.addEventListener('click', () => {
         selectedMood = button.textContent
