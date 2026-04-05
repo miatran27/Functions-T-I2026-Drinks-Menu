@@ -76,14 +76,14 @@ let form = document.querySelector('form')
                 `)
             } else {
             item.classList.remove('active')
-        }
+            }
     })
 
 //The line below is to open up my modal 
 modalDialog.showModal()
 })
 
-//Getting my modal set up
+//Getting my modal set up to open up and close
 let modalDialog = document.querySelector('#dialog')
 let closeButton = modalDialog.querySelector('button')
 

@@ -64,6 +64,7 @@ form legend {
 
 .slider-container {
   text-align: center;
+
   & label {
       display: block;
       padding-block-start: calc(2 * var(--base));
@@ -72,8 +73,36 @@ form legend {
   & input {
       display: block;
       margin: 0 auto;
+      width: calc(12 * var(--base));
   }
-}
+
+  & .slider-label {
+      display: flex;
+      justify-content: space-between;
+      width: calc(12 * var(--base));
+      margin: 0 auto;
+  }
+  }
+
+
+
+/* datalist {
+  display: flex;
+  flex-direction: grid;
+  justify-content: space-between;
+  width: calc(12.5 * var(--padding));
+} */
+
+/* option {
+  padding: 0;
+} */
+
+/* input[type="range"] {
+  width: 200px;
+  /* margin: 0; */
+
+
+
 
 .submit-button {
   text-align: center;
