@@ -43,7 +43,7 @@ dialog {
 }
 
 .modal-results h2 {
-  padding-block-start: calc(2 * var(--base));/* your styles here */
+  padding-block-start: calc(2 * var(--base));
 }
 
 .mood-buttons {
@@ -97,10 +97,25 @@ form legend {
   height: 60vh;
 }
 
+.herotext {
+  text-align: center;
+}
+
+
 .wheel-section {
-  background-color: red;
+  background-color: white;
   height: 60vh;
+
   & h2 {
     margin-block-start: 0;
+    text-align: center;
+    padding-block-start: calc(6* var(--base));
+  }
+
+  & .moodwheel {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+  }
 }
-}
+
