@@ -2,10 +2,12 @@
   font-size: 100%;
 	--background-color: yellow;
   --base: 1rem;
+  --padding: var(--base);
 }
 
 body {
     background-color: var(--background-color);
+    padding: var(--padding);
   }
 
 #mood li {
@@ -44,18 +46,33 @@ dialog {
   padding-block-start: calc(2 * var(--base));/* your styles here */
 }
 
-.slider-container label {
-  display: block;
-  padding-block-start: calc(2* var(--base));
-  text-align: center;;
+.mood-buttons {
+  display: flex;
+  justify-content: center;
+  gap: calc(var(--base) / 2);
+  flex-wrap: wrap;
+}
+
+form legend {
+  text-align: center;
+  padding-block-end: var(--base);
+}
+
+.slider-container {
+  text-align: center;
+  & label {
+      display: block;
+      padding-block-start: calc(2 * var(--base));
+      padding-block-end: var(--base);
+  }
+  & input {
+      display: block;
+      margin: 0 auto;
+  }
 }
 
 .submit-button {
   text-align: center;
+  padding-block-start: calc(2 * var(--base));
 }
 
-
-/* .modal-results {
-  display: grid;
-  gap: var(--base);
-} */
