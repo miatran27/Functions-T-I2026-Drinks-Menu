@@ -12,7 +12,12 @@ let renderItems = (data) => {
         }
 
         let itemHtml = `
-        <li data-mood="${item.mood}" data-intensity="${item.intensity}" data-intensity-label="${intensityLevel}">
+        <li data-mood="${item.mood}" 
+            data-intensity="${item.intensity}" 
+            data-intensity-label="${intensityLevel}"
+            data-ingredients="${item.ingredients.join(', ')}"
+            data-description="${item.description}"
+            data-image="${item.image}">
             <h2>${item.name}</h2>
             <p>${item.mood}</p>
             <p>${intensityLevel}</p>
@@ -53,15 +58,23 @@ let form = document.querySelector('form')
         let itemIntensity = Number(item.getAttribute('data-intensity'))
         if (itemMood === selectedMood && itemIntensity === intensityValue) {
             item.classList.add('active')
-            
+
+// Modal results
             let name = item.querySelector('h2').textContent
             let mood = item.getAttribute('data-mood')
             let intensityLabel = item.getAttribute('data-intensity-label')
+            let ingredients = item.getAttribute('data-ingredients')
+            let description = item.getAttribute('data-description')
+            let image = item.getAttribute('data-image')
 
             modalResults.insertAdjacentHTML('beforeend', `
                 <h2>${name}</h2>
-                <p>${mood} - ${intensityLabel}</p>`)
-        } else {
+                <p>${mood} - ${intensityLabel}</p>
+                <p>${ingredients}</p>
+                <p>${description}</p>
+                <img src="Images/${image}" alt="${name}">
+                `)
+            } else {
             item.classList.remove('active')
         }
     })
