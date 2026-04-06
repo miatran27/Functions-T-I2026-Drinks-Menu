@@ -15,7 +15,7 @@ let renderItems = (data) => {
         <li data-mood="${item.mood}" 
             data-intensity="${item.intensity}" 
             data-intensity-label="${intensityLevel}"
-            data-ingredients="${item.ingredients.join(', ')}"
+            data-ingredients="${item.ingredients}"
             data-description="${item.description}"
             data-image="${item.image}">
             <h2>${item.name}</h2>
@@ -68,8 +68,7 @@ let form = document.querySelector('form')
             let image = item.getAttribute('data-image')
 
             modalResults.insertAdjacentHTML('beforeend', `
-                <h2>${name}</h2>
-                <p>${mood} - ${intensityLabel}</p>
+                <h2>${name}</h2>          
                 <p>${ingredients}</p>
                 <p>${description}</p>
                 <img src="Images/${image}" alt="${name}">
