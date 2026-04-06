@@ -25,10 +25,9 @@ dialog {
   width: 80vw;
   height: 80vh;
   gap: calc(3 * var(--base));
-
-  /* &[open] { 
-    display: grid 
-  }  */
+  inset: 0;
+  margin: auto;
+ 
 
   &::backdrop {
 		background-color: rgb(0 0 0 / 66%); /* A dark overlay. */
@@ -84,6 +83,10 @@ form legend {
   }
   }
 
+  input[type="range"] {
+  appearance: auto;
+}
+
 
 .submit-button {
   text-align: center;
@@ -125,3 +128,33 @@ form legend {
   }
 }
 
+.mood-buttons {
+  gap: var(--base);
+  justify-content: center;
+  row-gap: calc(var(--base) / 2);
+
+ & button {
+  background-color: white;
+  border-radius: 50%;
+  width: calc(6 * var(--base));
+  height: calc(6 * var(--base));
+  cursor: pointer;
+  text-align: center;
+}
+
+& #bold { 
+  background-color: #C70000;
+}
+& #warmandcozy {
+  background-color: #D47B15;
+}
+& #joyful {
+  background-color: #FFF131;
+}
+& #freshandalive {
+  background-color: #3B8E00;
+}
+& #dreamy {
+  background-color: #AD39D3;
+}
+}
