@@ -54,7 +54,7 @@ dialog {
 }
 
 .input-section{
-  padding: var(--padding);
+  padding: var(--base);
 }
 
 form legend {
@@ -103,19 +103,25 @@ form legend {
 
 /* Styling the moodwheel section */
 .wheel-section {
-  background-color: white;
-  height: 60vh;
+  background-color: green;
+  padding: var(--base);
+  /* height: 60vh; */
 
   & h2 {
     margin-block-start: 0;
     text-align: center;
-    padding-block-start: calc(6* var(--base));
+    padding-block-start: var(--base);
   }
 
   & .moodwheel {
     width: 80%;
     display: block;
     margin: 0 auto;
+  }
+
+  & p {
+    text-align:center;
+    /* padding: var(--base); */
   }
 }
 
