@@ -69,7 +69,7 @@ let form = document.querySelector('form')
 
             modalResults.insertAdjacentHTML('beforeend', `
                 <h2 class="drink-name">${name}</h2>          
-                <p class="drink-ingredeints>${ingredients}</p>
+                <p class="drink-ingredeints">${ingredients}</p>
                 <p class="drink-description">${description}</p>
                 <img src="Images/${image}" alt="${name}">
                 `)
