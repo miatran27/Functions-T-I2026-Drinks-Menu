@@ -1,64 +1,64 @@
 [
   {
     "name": "Velvet Burn",
-    "ingredients": ["Bourbon", "honey syrup", "lemon juice", "egg white"],
-    "description": "Rich and warming with a velvety texture.",
+    "ingredients": ["Bourbon", "sugar cube", "bitters", "orange peel"],
+    "description": "Feeling a bit bold today? A clean, spirit-forward classic that lets the bourbon shine. Simple, confident, and bold with a smooth warmth that feels timeless and grounded.",
     "image": "afterhours.jpg",
     "mood": "Bold",
     "intensity": 2
   },
   {
     "name": "After Hours",
-    "ingredients": ["Bourbon", "honey syrup", "lemon juice", "egg white"],
-    "description": "Rich and warming with a velvety texture.",
+    "ingredients": ["Rye whiskey", "Averna amaro", "bitters", "cherry"],
+    "description": "A lighter take on a bold favorite-still rich and moody, but softened with herbal sweetness that makes it feel smooth, easy, and quietly powerful.",
     "image": "afterhours.jpg",
     "mood": "Bold",
     "intensity": 1
   },
   {
     "name": "After Hours",
-    "ingredients": ["Bourbon", "honey syrup", "lemon juice", "egg white"],
-    "description": "Rich and warming with a velvety texture.",
+    "ingredients":  ["Rye whiskey", "Averna amaro", "bitters", "cherry"],
+    "description": "Seeking warmth and coziness today? This deep, intense, and comforting drink leans into its richness with bold herbal notes and a strong finish that wraps around you like a slow evening.",
     "image": "afterhours.jpg",
     "mood": "Warm and cozy",
     "intensity": 3
   },
   {
     "name": "Bright Ember",
-    "ingredients": ["Bourbon", "honey syrup", "lemon juice", "egg white"],
-    "description": "Rich and warming with a velvety texture.",
+    "ingredients": ["Bourbon", "lemon", "mint", "sugar"],
+    "description": "Feeling cozy? Bright citrus meets mellow bourbon in a balanced, easygoing drink that feels both refreshing and comforting, just like a calm moment with a little spark.",
     "image": "afterhours.jpg",
     "mood": "Warm and cozy",
     "intensity": 2
   },
   {
     "name": "Sunset Pour",
-    "ingredients": ["Bourbon", "honey syrup", "lemon juice", "egg white"],
-    "description": "Rich and warming with a velvety texture.",
+    "ingredients": ["Whiskey", "honey", "lemon", "chamomile"],
+    "description": "Soft, soothing, and gently sweet. This light and calming drink feels like a quiet sunset, easing you into a relaxed and cozy state.",
     "image": "afterhours.jpg",
     "mood": "Warm and cozy",
     "intensity": 1
   },
   {
     "name": "Sunset Pour",
-    "ingredients": ["Bourbon", "honey syrup", "lemon juice", "egg white"],
-    "description": "Rich and warming with a velvety texture.",
+    "ingredients": ["Whiskey", "honey", "lemon", "chamomile"],
+    "description": "Feeling joyful today? A richer, more vibrant twist—warming whiskey shines through with bold citrus and honey, creating a lively yet comforting drink full of energy and glow for your bright mood.",
     "image": "afterhours.jpg",
     "mood": "Joyful",
     "intensity": 3
   },
   {
     "name": "Tequila Sunrise",
-    "ingredients": ["Bourbon", "honey syrup", "lemon juice", "egg white"],
-    "description": "Rich and warming with a velvety texture.",
+    "ingredients": ["Tequila", "orange juice", "grenadine"],
+    "description": "This will be perfect for your joyful mood today! Bright and uplifting with a smooth tequila base, this drink balances citrus sweetness with a playful vibe that feels like pure sunshine in a glass.",
     "image": "afterhours.jpg",
     "mood": "Joyful",
     "intensity": 2
   },
   {
     "name": "Aurora Spritz",
-    "ingredients": ["Bourbon", "honey syrup", "lemon juice", "egg white"],
-    "description": "Rich and warming with a velvety texture.",
+    "ingredients": ["Prosecco", "elderflower liqueur", "soda water", "mint", "lime"],
+    "description": "Want something light and cheerful? This light, sparkling, and full of charm drink brings soft floral notes and bubbly happiness that makes everything feel a little more fun.",
     "image": "afterhours.jpg",
     "mood": "Joyful",
     "intensity": 1
@@ -66,55 +66,55 @@
   {
     "name": "Aurora Spritz",
     "ingredients": ["Bourbon", "honey syrup", "lemon juice", "egg white"],
-    "description": "Rich and warming with a velvety texture.",
+    "description": "Crisp, airy, and super refreshing, this easy spritz feels cool and lively with fresh mint and bubbles that instantly wake up the mood.",
     "image": "afterhours.jpg",
     "mood": "Fresh and alive",
     "intensity": 1
   },
   {
     "name": "Basil No.3",
-    "ingredients": ["Bourbon", "honey syrup", "lemon juice", "egg white"],
-    "description": "Rich and warming with a velvety texture.",
+    "ingredients": ["Gin", "lime juice", "basil", "simple syrup"],
+    "description": "Clean, herb-forward, and bright, this drink highlights basil and lime in a crisp, balanced way that feels sharp, and energizing.",
     "image": "afterhours.jpg",
     "mood": "Fresh and alive",
     "intensity": 2
   },
   {
     "name": "Tender Bloom",
-    "ingredients": ["Bourbon", "honey syrup", "lemon juice", "egg white"],
-    "description": "Rich and warming with a velvety texture.",
+    "ingredients": ["Vodka", "pear liqueur", "lemon juice"],
+    "description": "A drink that's brighter and more striking, this stronger version keeps its smooth pear character while delivering a sharper, fresher edge with a confident finish.",
     "image": "afterhours.jpg",
     "mood": "Fresh and alive",
     "intensity": 3
   },
   {
     "name": "Tender Bloom",
-    "ingredients": ["Bourbon", "honey syrup", "lemon juice", "egg white"],
-    "description": "Rich and warming with a velvety texture.",
+    "ingredients": ["Vodka", "pear liqueur", "lemon juice"],
+    "description": "Soft and delicate with a gentle fruitiness, this lighter sip feels elegant, airy, and calm—perfect for a romantic, dreamy kind of mood.",
     "image": "afterhours.jpg",
     "mood": "Dreamy",
     "intensity": 1
   },
   {
     "name": "Purple Rain",
-    "ingredients": ["Bourbon", "honey syrup", "lemon juice", "egg white"],
-    "description": "Rich and warming with a velvety texture.",
+    "ingredients": ["Vodka", "blue curaçao", "cranberry juice", "lemon juice"],
+    "description": "We all feel dreamy on certain days! Sweet, smooth, and a little mysterious, this drink feels romantic and playful with a dreamy color and a soft, floaty charm that lingers like a daydream.",
     "image": "afterhours.jpg",
     "mood": "Dreamy",
     "intensity": 2
   },
   {
     "name": "Where It Ends",
-    "ingredients": ["Bourbon", "honey syrup", "lemon juice", "egg white"],
-    "description": "Rich and warming with a velvety texture.",
+    "ingredients": ["Gin", "lemon juice", "simple syrup", "crème de mûre"],
+    "description": "We all feel dreamy on certain days! Rich berry notes and a bold gin base give this drink a deeper, more intense feel, with a velvety finish that lingers just a little longer.",
     "image": "afterhours.jpg",
     "mood": "Dreamy",
     "intensity": 3
   },
   {
     "name": "Where It Ends",
-    "ingredients": ["Bourbon", "honey syrup", "lemon juice", "egg white"],
-    "description": "Rich and warming with a velvety texture.",
+    "ingredients": ["Gin", "lemon juice", "simple syrup", "crème de mûre"],
+    "description": "If you’re feeling extra bold today, this version leans into the gin and dark berry depth. Strong, sharp, and confidently layered for a bolder sip with real presence.",
     "image": "afterhours.jpg",
     "mood": "Bold",
     "intensity": 3
