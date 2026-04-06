@@ -14,9 +14,9 @@ body {
     display: none;
   }
 
+/* Styling the modal and drink results */
 
-/* Stops the page from scrolling when there is an open one: */
-body:has(dialog[open]) { overflow: hidden; }
+body:has(dialog[open]) { overflow: hidden; } /* Stops the page from scrolling when there is an open one: */
 
 dialog {
   background-color: white;
@@ -44,6 +44,15 @@ dialog {
 .modal-results h2 {
   padding-block-start: calc(2 * var(--base));
 }
+
+.modal-results {
+  padding: var(--base);
+}
+
+.drink-name {
+  font-size: calc(2* var(--base));
+}
+
 
 .mood-buttons {
   display: flex;

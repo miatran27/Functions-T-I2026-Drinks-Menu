@@ -68,9 +68,9 @@ let form = document.querySelector('form')
             let image = item.getAttribute('data-image')
 
             modalResults.insertAdjacentHTML('beforeend', `
-                <h2>${name}</h2>          
-                <p>${ingredients}</p>
-                <p>${description}</p>
+                <h2 class="drink-name">${name}</h2>          
+                <p class="drink-ingredeints>${ingredients}</p>
+                <p class="drink-description">${description}</p>
                 <img src="Images/${image}" alt="${name}">
                 `)
             } else {
