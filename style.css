@@ -53,7 +53,6 @@ dialog {
   font-size: calc(2* var(--base));
 }
 
-
 .mood-buttons {
   display: flex;
   justify-content: center;
@@ -61,9 +60,11 @@ dialog {
   flex-wrap: wrap;
 }
 
-.input-section{
+/* .input-section{
   padding: var(--base);
-}
+  width: 100vw;
+  height: 100vh;
+} */
 
 form legend {
   text-align: center;
@@ -106,7 +107,11 @@ form legend {
 .hero {
   background-color: white;
   width: 100vw;
-  height: 60vh;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .herotext {
@@ -116,34 +121,49 @@ form legend {
 .heroscroll {
   position: absolute;
   left: 50%;
-  bottom: 2rem;
+  bottom: calc(3 * var(--base));
   transform: translateX(-50%);
-  width: 2.8rem;
-  height: 2.8rem;
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
   cursor: pointer;
-  z-index: 3;
-  background: #F1B100; /* add this */
-  border-radius: 50%; /* makes it circular */
-   animation: scroll-bounce 1.4s ease-in-out infinite;
+  /* z-index: 3; */
+  animation: scroll-bounce 1.4s ease-in-out infinite;
 }
 
 .scrollicon {
-  width: 1.25rem;
-  height: 1.25rem;
-  border-left: 3px solid black;
-  border-bottom: 3px solid black;
+  width: calc(1.5 * var(--base));
+  height: calc(1.5 * var(--base));
+  border-left: calc(var(--base) / 5) solid black;
+  border-bottom: calc(var(--base) / 5) solid black;
   transform: rotate(-45deg);
-  margin-top: -0.4rem;
 }
 
 @keyframes scroll-bounce {
   0%, 100% { transform: translateX(-50%) translateY(0); }
   50% { transform: translateX(-50%) translateY(6px); }
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.input-section{
+  padding: var(--base);
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  margin-top: 100vh;
+  z-index: 1;
+  background-color: var(--background-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 
 /* Styling the moodwheel section */
 .wheel-section {
