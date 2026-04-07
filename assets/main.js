@@ -94,7 +94,8 @@ closeButton.addEventListener('click', () => {
     modalDialog.close()
 })
 
-//This allows user to click the area outside of the modal and modal can still close, without having to click the Close button
+//This allows user to click the area outside of the modal and modal can still close, without having to click the Close button. 
+// Result is still saved when user closes modal and goes back the form.
 document.addEventListener('click', (event) => {
     if (event.target == document.documentElement) {
         modalDialog.close()
@@ -102,11 +103,13 @@ document.addEventListener('click', (event) => {
 })
 
   
-//Closing the modal and goes back to hero 
+//Closing the modal and goes back to hero, result should be reset when user goes back to the hero 
 let backButton = modalDialog.querySelector('.back-to-beginning')
 backButton.addEventListener('click', () => {
   modalDialog.close()
   window.scrollTo(0, 0)
+  selectedMood = null
+  form.reset()
 })
 
 
