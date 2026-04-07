@@ -103,8 +103,19 @@ form legend {
 
 
 .submit-button {
-  text-align: center;
-  padding-block-start: calc(2 * var(--base));
+  /* text-align: center; */
+  /* padding-block-start: calc(2 * var(--base)); */
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  bottom: calc(3 * var(--base));
+  margin-inline: auto;
+  width: fit-content;
+  padding: var(--base) calc(2 * var(--base));
+  background: #000;  
+  color: #fff;
+  border-radius: 0;
+  cursor: pointer;
 }
 
 /* Styling the hero */
@@ -122,15 +133,17 @@ form legend {
   text-align: center;
 }
 
-.heroscroll {
+.herobutton {
   position: absolute;
   left: 0%;
   right: 0%;
   bottom: calc(3 * var(--base));
   margin-inline: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: fit-content;
+  padding: var(--base);
+  background: #000;  
+  color: #fff;
+  border-radius: 0;
   cursor: pointer;
 } 
 
@@ -214,19 +227,19 @@ html {
   text-align: center;
 }
 
-& #bold { 
+ & #bold { 
   background-color: #C70000;
 }
-& #warmandcozy {
+ & #warmandcozy {
   background-color: #D47B15;
 }
-& #joyful {
+ & #joyful {
   background-color: #FFF131;
 }
-& #freshandalive {
+ & #freshandalive {
   background-color: #3B8E00;
 }
-& #dreamy {
+ & #dreamy {
   background-color: #AD39D3;
 }
 }
