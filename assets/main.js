@@ -34,6 +34,8 @@ let selectedMood = null
     buttons.forEach(button => {
     button.addEventListener('click', () => {
         selectedMood = button.textContent
+        buttons.forEach(otherButton => otherButton.classList.remove('selected'))
+        button.classList.add('selected')
     })
     })
 
@@ -77,7 +79,6 @@ let form = document.querySelector('form')
             item.classList.remove('active')
             }
     })
-
             if (modalResults.innerHTML === '') {
                 modalResults.innerHTML = '<p class="no-results">No Results Found!</p>'
             }
@@ -110,6 +111,13 @@ backButton.addEventListener('click', () => {
   window.scrollTo(0, 0)
   selectedMood = null
   form.reset()
+  buttons.forEach(otherButton => otherButton.classList.remove('selected'))
+})
+
+//The selected button border gets reset when user clicks "back to top" from the form screen
+let backToTop = document.querySelector('.back-to-top')
+backToTop.addEventListener('click', () => {
+  buttons.forEach(otherButton => otherButton.classList.remove('selected'))
 })
 
 

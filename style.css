@@ -248,6 +248,10 @@ html {
   text-align: center;
 }
 
+& button.selected {
+  border: solid black;
+}
+
  & #bold { 
   background-color: #C70000;
 }
@@ -264,3 +268,5 @@ html {
   background-color: #AD39D3;
 }
 }
+
+ 
