@@ -124,33 +124,17 @@ form legend {
 
 .heroscroll {
   position: absolute;
-  left: 50%;
+  left: 0%;
+  right: 0%;
   bottom: calc(3 * var(--base));
-  transform: translateX(-50%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  cursor: pointer;
-  /* z-index: 3; */
-  animation: scroll-bounce 1.4s ease-in-out infinite;
-}
-
-/* .input-section-scroll {
-  position: absolute;
-  top: calc(2 * var(--base));
-  left: 0;
-  right: 0;
   margin-inline: auto;
-  width: fit-content;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-decoration: none;
   cursor: pointer;
-} */
+} 
 
-.scrollicon {
+/* .scrollicon {
   width: calc(1.5 * var(--base));
   height: calc(1.5 * var(--base));
   border-left: calc(var(--base) / 5) solid black;
@@ -161,7 +145,7 @@ form legend {
 @keyframes scroll-bounce {
   0%, 100% { transform: translateX(-50%) translateY(0); }
   50% { transform: translateX(-50%) translateY(6px); }
-}
+} */
 
 .back-to-top {
   position: absolute;
