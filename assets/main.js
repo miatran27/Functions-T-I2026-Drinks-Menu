@@ -78,8 +78,12 @@ let form = document.querySelector('form')
             }
     })
 
-//The line below is to open up my modal 
-modalDialog.showModal()
+    if (modalResults.innerHTML === '') {
+        modalResults.innerHTML = '<p>No Results Found!</p>'
+    }
+
+    //The line below is to open up my modal 
+    modalDialog.showModal()
 })
 
 //Getting my modal set up to open up and close
