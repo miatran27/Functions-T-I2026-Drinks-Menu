@@ -98,6 +98,13 @@ document.addEventListener('click', (event) => {
 })
 
   
+//Closing the modal and goes back to hero 
+let backButton = modalDialog.querySelector('.back-to-beginning')
+backButton.addEventListener('click', () => {
+  modalDialog.close()
+  window.scrollTo(0, 0)
+})
+
 
 fetch('assets/data.json')
 	.then(response => response.json())

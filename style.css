@@ -145,6 +145,18 @@ form legend {
   50% { transform: translateX(-50%) translateY(6px); }
 }
 
+.back-to-top {
+  position: absolute;
+  top: calc(2 * var(--base));
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  width: fit-content;
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -164,12 +176,10 @@ html {
 }
 
 
-
 /* Styling the moodwheel section */
-.wheel-section {
+/* .wheel-section {
   background-color: green;
   padding: var(--base);
-  /* height: 60vh; */
 
   & h2 {
     margin-block-start: 0;
@@ -185,9 +195,8 @@ html {
 
   & p {
     text-align:center;
-    /* padding: var(--base); */
   }
-}
+} */
 
 .mood-buttons {
   gap: var(--base);
