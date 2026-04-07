@@ -69,7 +69,7 @@ let form = document.querySelector('form')
 
             modalResults.insertAdjacentHTML('beforeend', `
                 <h2 class="drink-name">${name}</h2>          
-                <p class="drink-ingredeints">${ingredients}</p>
+                <p class="drink-ingredients">${ingredients}</p>
                 <p class="drink-description">${description}</p>
                 <img src="Images/${image}" alt="${name}">
                 `)
@@ -78,9 +78,9 @@ let form = document.querySelector('form')
             }
     })
 
-    if (modalResults.innerHTML === '') {
-        modalResults.innerHTML = '<p>No Results Found!</p>'
-    }
+            if (modalResults.innerHTML === '') {
+                modalResults.innerHTML = '<p class="no-results">No Results Found!</p>'
+            }
 
     //The line below is to open up my modal 
     modalDialog.showModal()
