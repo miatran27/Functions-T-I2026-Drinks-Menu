@@ -205,7 +205,7 @@ html {
   position: relative;
   margin-top: 100vh;
   z-index: 1;
-  background-color: var(--background-color);
+  background-color: #FFFD8F;
   display: flex;
   align-items: center;
   justify-content: center;
