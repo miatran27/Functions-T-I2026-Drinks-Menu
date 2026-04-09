@@ -155,7 +155,7 @@ form legend {
 
 .herotext {
   text-align: center;
-  padding-block-start: calc(3 * var(--base));
+  padding-block-start: calc(4 * var(--base));
 }
 
 .heroimage {
