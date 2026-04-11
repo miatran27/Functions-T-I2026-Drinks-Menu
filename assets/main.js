@@ -31,11 +31,13 @@ let renderItems = (data) => {
 
 let selectedMood = null
     let buttons = document.querySelectorAll('.mood-buttons button')
+    let submitButton = document.querySelector('.submit-button button')
     buttons.forEach(button => {
     button.addEventListener('click', () => {
         selectedMood = button.textContent
         buttons.forEach(otherButton => otherButton.classList.remove('selected'))
         button.classList.add('selected')
+        submitButton.removeAttribute('disabled')
     })
     })
 
