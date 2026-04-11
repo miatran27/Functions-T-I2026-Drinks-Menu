@@ -110,10 +110,11 @@ document.addEventListener('click', (event) => {
 let backButton = modalDialog.querySelector('.back-to-beginning')
 backButton.addEventListener('click', () => {
   modalDialog.close()
-  window.scrollTo(0, 0)
+//   document.querySelector('#input-section').scrollIntoView()
   selectedMood = null
   form.reset()
   buttons.forEach(otherButton => otherButton.classList.remove('selected'))
+  submitButton.setAttribute('disabled', '')
 })
 
 //The selected button border gets reset when user clicks "back to top" from the form screen
