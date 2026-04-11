@@ -142,11 +142,11 @@ form legend {
   cursor: pointer;
 }
 
-.submit-button button:disabled {
+.submit-button:disabled {
   background: grey;
-  color: #fff;
-  opacity: 0.5;
-  cursor: not-allowed;
+  opacity: 0.5; 
+  color: white;
+  cursor: default;
 }
 
 /* Styling the hero */
