@@ -296,7 +296,7 @@ input[type="range"] {
   -webkit-appearance: none;
   appearance: none;
   width: calc(17 * var(--base));
-  background: linear-gradient(45deg, #3bade3 0%, #576fe6 25%, #9844b7 51%, #ff357f 100%);
+  background: linear-gradient(to right, #3bade3 0%, #3b82f6 50%, #1e40af 100%);
   height: calc(var(--base) / 2);
 }
 /* The track (the line the thumb slides along) */
