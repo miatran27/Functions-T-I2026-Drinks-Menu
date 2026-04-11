@@ -116,8 +116,9 @@ form legend {
   & .slider-label {
       display: flex;
       justify-content: space-between;
-      width: calc(12 * var(--base));
+      width: calc(17 * var(--base));
       margin: 0 auto;
+      padding-block-start: var(--base);
   }
   }
 
@@ -294,10 +295,9 @@ html {
 input[type="range"] {
   -webkit-appearance: none;
   appearance: none;
-  width: calc(12 * var(--base));
+  width: calc(17 * var(--base));
   background: linear-gradient(45deg, #3bade3 0%, #576fe6 25%, #9844b7 51%, #ff357f 100%);
   height: calc(var(--base) / 2);
-
 }
 /* The track (the line the thumb slides along) */
 input[type="range"]::-webkit-slider-runnable-track {
