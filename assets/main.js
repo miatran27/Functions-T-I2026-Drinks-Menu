@@ -31,7 +31,7 @@ let renderItems = (data) => {
 
 let selectedMood = null
     let buttons = document.querySelectorAll('.mood-buttons button')
-    let submitButton = document.querySelector('.submit-button button')
+    let submitButton = document.querySelector('.submit-button')
     buttons.forEach(button => {
     button.addEventListener('click', () => {
         selectedMood = button.textContent
