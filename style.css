@@ -97,6 +97,7 @@ form legend {
   text-align: center;
   padding-block-end: calc(2 * var(--base));
   font-size: var(--h2);
+  color: white;
 }
 
 .slider-container {
@@ -106,6 +107,7 @@ form legend {
       display: block;
       padding-block-start: calc(2 * var(--base));
       padding-block-end: var(--base);
+      color: white;
   }
   & input {
       display: block;
@@ -119,6 +121,7 @@ form legend {
       width: calc(17 * var(--base));
       margin: 0 auto;
       padding-block-start: var(--base);
+      color: white;
   }
   }
 
@@ -138,8 +141,8 @@ form legend {
   margin-inline: auto;
   width: fit-content;
   padding: var(--base) calc(2 * var(--base));
-  background: #000;  
-  color: #fff;
+  background: white;  
+  color: black;
   border-radius: 0;
   cursor: pointer;
 }
@@ -211,7 +214,7 @@ form legend {
   width: fit-content;
   text-decoration: none;
   cursor: pointer;
-  color: black;
+  color: white;
 }
 
 html {
@@ -226,7 +229,7 @@ html {
   position: relative;
   margin-top: 100vh;
   z-index: 1;
-  background-color: #FFFD8F;
+  background-color: #000033;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -270,7 +273,7 @@ html {
 }
 
 & button.selected {
-  border: solid black;
+  border: solid white;
 }
 
  & #bold { 
