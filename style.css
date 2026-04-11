@@ -4,6 +4,7 @@
   --base: 1rem;
   --padding: var(--base);
   --h2: 2rem;
+  --border: calc(var(--base) / 8); 
 }
 
 body {
@@ -120,9 +121,9 @@ form legend {
   }
   }
 
-  input[type="range"] {
+  /* input[type="range"] {
   appearance: auto;
-}
+} */
 /*LLM chat reference: https://claude.ai/share/8f6e3d1d-96b0-4757-a029-7830f6eb9cf0 */
 /*I used Claude to find how I could bring back my slider after I added my reset CSS in. Additionally, I also wanted to see how I could target and style different parts of the slider. Got some feedback from instructors to give more context and ask more specific narrow questions to get better answers on understanding how the code works, and looked up some other resources as well to find how to style sliders.  */
 
@@ -288,4 +289,42 @@ html {
 }
 }
 
- 
+ /* Styling the input range slider */
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: calc(12 * var(--base));
+  background: linear-gradient(45deg, #3bade3 0%, #576fe6 25%, #9844b7 51%, #ff357f 100%);
+  height: calc(var(--base) / 2);
+
+}
+/* The track (the line the thumb slides along) */
+input[type="range"]::-webkit-slider-runnable-track {
+
+}
+
+/* Styling the thumb of the slider */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: var(--border) solid #9844b7;
+  border-radius: 50%;
+  height: calc(1.5 * var(--base));
+  width: calc(1.5 * var(--base));
+  background-color: white;
+  cursor: grab;
+}
+
+/* Same thing but styling that worksfor Firefox */
+input[type="range"]::-moz-range-thumb {
+  border: var(--border) solid #9844b7;
+  border-radius: 50%;
+  height: calc(1.5 * var(--base));
+  width: calc(1.5 * var(--base));
+  background-color: white;
+  cursor: grab;
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
