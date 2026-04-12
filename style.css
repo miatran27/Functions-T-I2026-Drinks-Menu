@@ -273,7 +273,7 @@ html {
 }
 
 & button.selected {
-  border: solid white;
+  border:var(--border)solid white;
 }
 
  & #bold { 
