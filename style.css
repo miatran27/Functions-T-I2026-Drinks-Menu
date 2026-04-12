@@ -5,6 +5,7 @@
   --base: 1rem;
   --padding: var(--base);
   --h2: 2rem;
+  --p: 0.8rem;
   --border: calc(var(--base) / 8); 
   --font-heading: "Cormorant Garamond", serif;
 }
@@ -109,11 +110,11 @@ form legend {
 
   & label {
       display: block;
-      padding-block-start: calc(2 * var(--base));
-      padding-block-end: var(--base);
+      padding-block-start: calc(3 * var(--base));
+      padding-block-end: calc(2 * var(--base));
       color: #1C1410;
       font-size: var(--base);
-      max-width: 30ch;
+      max-width: 25ch;
       margin-inline: auto;
   }
   & input {
@@ -125,7 +126,7 @@ form legend {
   & .slider-label {
       display: flex;
       justify-content: space-between;
-      width: calc(17 * var(--base));
+      width: calc(20 * var(--base));
       margin: 0 auto;
       padding-block-start: var(--base);
       color: #1C1410;
@@ -221,7 +222,8 @@ form legend {
   width: fit-content;
   text-decoration: none;
   cursor: pointer;
-  color: white;
+  color: #1C1410;
+  font-size: var(--p);
 }
 
 html {
@@ -306,7 +308,7 @@ html {
 input[type="range"] {
   -webkit-appearance: none;
   appearance: none;
-  width: calc(17 * var(--base));
+  width: calc(20 * var(--base));
   background: linear-gradient(to right, #3bade3 0%, #3b82f6 50%, #1e40af 100%);
   height: calc(var(--base) / 2);
 }
