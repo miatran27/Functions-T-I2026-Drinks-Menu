@@ -27,7 +27,7 @@ body:has(dialog[open]) { overflow: hidden; } /* Stops the page from scrolling wh
 
 dialog {
   background-color: #F5EDD8;
-  border-radius: var(--base);
+  /* border-radius: var(--base); */
   position: fixed; 
   width: 80vw;
   height: 80vh;
@@ -54,6 +54,9 @@ dialog {
     margin: var(--base) auto;
     width: fit-content;
     cursor: pointer;
+    border: calc(var(--border) / 2) solid #8B3A1A;
+    color: #8B3A1A;
+    padding: calc(var(--base) / 2);
 }
 }
 
@@ -68,6 +71,8 @@ dialog {
   padding-block-start: calc(2 * var(--base));
   font-family: var(--font-heading);
   font-weight: 600;
+  font-style: italic;
+  color: #8B3A1A
 }
 
 .modal-results img {
@@ -177,7 +182,7 @@ form legend {
   margin-inline: auto;
   width: fit-content;
   padding: var(--base) calc(2 * var(--base));
-  background: #1C1410;  
+  background: #8B3A1A;  
   color: var(--background-color);
   border-radius: 0;
   cursor: pointer;
@@ -308,23 +313,24 @@ html {
   cursor: pointer;
   text-align: center;
   font-size: var(--base);
+  color: white;
 }
 
 & button.selected {
-  border:var(--border)solid white;
+  border: calc(2 * var(--border))solid var(--body-color);
 }
 
  & #bold { 
-  background-color: #C70000;
+  background-color: #8B3A1A;
 }
  & #warmandcozy {
   background-color: #D47B15;
 }
  & #joyful {
-  background-color: #FFF131;
+  background-color: #e0d734;
 }
  & #freshandalive {
-  background-color: #3B8E00;
+  background-color:  #2D4A3E;;
 }
  & #dreamy {
   background-color: #AD39D3;
