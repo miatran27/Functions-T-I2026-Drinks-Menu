@@ -149,8 +149,8 @@ form legend {
   margin-inline: auto;
   width: fit-content;
   padding: var(--base) calc(2 * var(--base));
-  background: white;  
-  color: black;
+  background: #1C1410;  
+  color: #F5EDD8;
   border-radius: 0;
   cursor: pointer;
 }
