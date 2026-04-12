@@ -65,6 +65,14 @@ dialog {
   font-weight: 600;
 }
 
+.modal-results img {
+  margin-block-start: calc(1 * var(--base));
+  border: solid black;
+  background-color: white;
+}
+
+
+
 .modal-results {
   padding: var(--base);
 }
@@ -76,6 +84,7 @@ dialog {
 
 .drink-ingredients {
   padding-block-end: calc(2* var(--base));
+  font-style: italic;
 }
 
 .no-results {
@@ -345,3 +354,4 @@ input[type="range"]::-moz-range-thumb {
 input[type="range"]:focus {
   outline: none;
 }
+
