@@ -75,7 +75,7 @@ let form = document.querySelector('form')
                 <h2 class="drink-name">${name}</h2>          
                 <p class="drink-ingredients">${ingredients}</p>
                 <p class="drink-description">${description}</p>
-                <img src="Images/${image}" alt="${name}">
+                <img src="images/cocktails/${image}" alt="${name}">
                 `)
             } else {
             item.classList.remove('active')
