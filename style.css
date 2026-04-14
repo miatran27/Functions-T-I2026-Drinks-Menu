@@ -434,6 +434,12 @@ border: calc(2 * var(--border)) solid #8B3A1A;
   .drink-description {
     max-width: 40ch;
   }
+
+  .drink-info {
+    border-right: calc(var(--border) / 2) solid var(--body-color);
+    padding-right: var(--base);
+    justify-self: stretch;
+  }
 }
 
 
