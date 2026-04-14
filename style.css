@@ -403,6 +403,19 @@ border: calc(2 * var(--border)) solid #8B3A1A;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
   }
+
+  .modal-results img {
+    margin-block-start: 0;
+    max-height: 90%;
+    max-width: 90%;
+  }
+
+  .drink-image {
+    height: auto;
+    display: grid;
+    place-items: center;
+  }
+
 }
 
 
