@@ -398,6 +398,18 @@ border: calc(2 * var(--border)) solid #8B3A1A;
 }
 
 
+@media (min-width: 1280px) {
+  .modal-results {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+
+
+
+
 /* 
 input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
