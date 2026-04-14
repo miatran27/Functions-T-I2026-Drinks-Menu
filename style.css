@@ -404,18 +404,36 @@ border: calc(2 * var(--border)) solid #8B3A1A;
     grid-template-columns: 1fr 1fr;
   }
 
-  .modal-results img {
+  /* .modal-results img {
     margin-block-start: 0;
     max-height: 90%;
     max-width: 90%;
-  }
+  } */
 
   .drink-image {
-    height: auto;
+    /* height: auto; */
     display: grid;
     place-items: center;
   }
 
+  .modal-results img {
+    margin-block-start: 0;
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  .modal-results {
+    padding: calc(2 * var(--base));
+  }
+
+  dialog {
+    width: 60vw;
+    height: 60vh;
+  }
+
+  .drink-description {
+    max-width: 40ch;
+  }
 }
 
 
