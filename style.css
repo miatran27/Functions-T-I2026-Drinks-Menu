@@ -252,8 +252,8 @@ form legend {
   margin-inline: auto;
   width: fit-content;
   padding: var(--base);
-  background: #000;  
-  color: #fff;
+  background: #FAF6EE;  
+  color: black;
   border-radius: 0;
   cursor: pointer;
 } 
