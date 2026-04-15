@@ -191,7 +191,7 @@ form legend {
 
 /* Styling the hero */
 .hero {
-  background-color: white;
+  background-color: var(--body-color);
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -202,7 +202,33 @@ form legend {
 
 .herotext {
   text-align: center;
-  padding-block-start: calc(4 * var(--base));
+  /* padding-block-start: calc(4 * var(--base));  */
+  text-align: center;
+  padding: var(--base);
+  color: #FAF6EE;
+  /* position: absolute;
+  top: 50%;
+  left: 50%; */
+  /* transform: translate(-50%, -50%); */
+
+}
+
+.herotext h1 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: calc(3 * var(--base));
+  padding-block-end: calc(2 * var(--base));
+  padding-block-start: calc(3 * var(--base));
+
+}
+
+.herotext em {
+  font-style: italic;
+  color: #B8860B;
+}
+
+.herotext p {
+
 }
 
 .heroimage {
