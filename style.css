@@ -419,9 +419,9 @@ border: calc(2 * var(--border)) solid #8B3A1A;
   width: calc(30 * var(--base));
   object-fit: contain;
 } */
-.drink-image {
+/* .drink-image {
   height: 50vh;
-}
+} */
 
 .slider-container {
   padding-block-start: calc(2 * var(--base));
