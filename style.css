@@ -2,7 +2,7 @@
   font-size: 100%;
   font-family: "DM Sans", sans-serif;
 	--background-color: #FAF6EE;
-  --body-color: #1C1410;
+  --body-color: #291d17;
   --base: 1rem;
   --padding: var(--base);
   --h2: 2rem;
@@ -27,7 +27,7 @@ body {
 body:has(dialog[open]) { overflow: hidden; } /* Stops the page from scrolling when there is an open one: */
 
 dialog {
-  background-color: #F5EDD8;
+  background-color: var(--background-color);
   /* border-radius: var(--base); */
   position: fixed; 
   width: 80vw;
@@ -47,16 +47,12 @@ dialog {
 	}
 
   & .back-to-beginning {
-    /* position: absolute; */
-    /* bottom: calc(2 * var(--base));
-    left: 0;
-    right: 0;
-    margin-inline: auto; */
     margin: var(--base) auto;
     width: fit-content;
     cursor: pointer;
-    border: calc(var(--border) / 2) solid #8B3A1A;
-    color: #8B3A1A;
+    /* border: calc(var(--border) / 2) solid #8B3A1A; */
+    background-color: white;
+    color: var(--body-color);
     padding: calc(var(--base) / 2);
 }
 }
@@ -100,12 +96,15 @@ dialog {
   grid-template-rows: 1fr 1fr;
   justify-items: center;
   min-height: 0;
-  background-color: #8B3A1A;
+  /* background-color: var(--body-color); */
 }
 
 .modal-button {
-  background-color: white;
+  background-color: var(--body-color);
+  padding: calc(var(--base) / 2);
   text-align: center;
+  /* display: grid;
+  place-items: center; */
 }
 
 
@@ -130,9 +129,9 @@ dialog {
   transform: translate(-50%, -50%);
 } */
 
-.drink-info, .drink-image {
+/* .drink-info, .drink-image {
   background-color: var(--background-color);
-}
+} */
 
 form legend {
   font-family: var(--font-heading);
@@ -406,6 +405,10 @@ input[type="range"]:focus {
 }
 
 .drink-info {
+  padding: var(--base);
+}
+
+.modal-results img {
   padding: var(--base);
 }
 
