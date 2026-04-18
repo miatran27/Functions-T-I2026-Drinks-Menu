@@ -77,7 +77,7 @@ dialog {
 }
 
 .modal-results img {
-  margin-block-start: var(--base);
+  /* margin-block-start: var(--base); */
   /* border: solid black; */
   display: block;
   margin-inline: auto;
@@ -390,6 +390,11 @@ input[type="range"]:focus {
     height: calc(8 * var(--base));
     padding-inline: var(--base);
  }
+
+
+ dialog {
+  height: 85vh;
+}
 
  form legend {
   font-weight: 600;
