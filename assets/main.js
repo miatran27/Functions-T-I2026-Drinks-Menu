@@ -95,11 +95,11 @@ let form = document.querySelector('form')
 
 //Getting my modal set up to open up and close
 let modalDialog = document.querySelector('#dialog')
-let closeButton = modalDialog.querySelector('button')
+// let closeButton = modalDialog.querySelector('button')
 
-closeButton.addEventListener('click', () => {
-    modalDialog.close()
-})
+// closeButton.addEventListener('click', () => {
+//     modalDialog.close()
+// })
 
 //This allows user to click the area outside of the modal and modal can still close, without having to click the Close button. 
 // Result is still saved when user closes modal and goes back the form.

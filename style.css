@@ -60,15 +60,15 @@ dialog {
 }
 }
 
-.close-button {
+/* .close-button {
   position: absolute;
   top: var(--base);
   right: var(--base);
-  z-index: 1; /* above .modal-results so it stays clickable when .no-results fills the area */
-}
+  z-index: 1; 
+} */
 
 .modal-results h2 {
-  padding-block-start: calc(2 * var(--base));
+  /* padding-block-start: calc(2 * var(--base)); */
   font-family: var(--font-heading);
   font-weight: 600;
   font-style: italic;
