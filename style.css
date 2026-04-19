@@ -183,7 +183,7 @@ form legend {
 
 
 
-  datalist {
+  /* datalist {
     display: flex;
     justify-content: space-between;
     width: calc(20 * var(--base));
@@ -194,7 +194,7 @@ form legend {
     width: var(--border);
     height: calc(var(--base)/2);
     background-color: var(--body-color);
-  }
+  } */
 
 
 
@@ -407,7 +407,8 @@ input[type="range"]::-webkit-slider-thumb {
   width: calc(2 * var(--base));
   background-color: white;
   cursor: grab;
-  transform: translateY(-25%);
+  /* transform: translateY(-25%); */
+  /* margin-top: calc((var(--base) / 2 - 2 * var(--base)) / 2) */
 }
 
 /* Same thing as the code above but styling that works for Firefox browser */
