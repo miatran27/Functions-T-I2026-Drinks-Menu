@@ -332,26 +332,30 @@ html {
   color: white;
 }
 
-& button.selected {
-  border: calc(2 * var(--border))solid var(--body-color);
+ & #bold { background-color: #8B3A1A; }
+ & #warmandcozy { background-color: #D47B15; }
+ & #joyful { background-color: #e0d734; }
+ & #freshandalive { background-color:  #2D4A3E; }
+ & #dreamy { background-color: #AD39D3; }
 }
 
- & #bold { 
-  background-color: #8B3A1A;
+
+.mood-buttons .selected {
+  color: var(--body-color);
+  border-width: var(--border);
+  border-style: solid;
+
+  &:is(#bold, #warmandcozy, #joyful, #freshandalive, #dreamy) {
+    background-color: white;
+  }
+
+  & #bold { border-color: #8B3A1A; }
+  & #warmandcozy { border-color: #D47B15; }
+  & #joyful { border-color: #e0d734; }
+  & #freshandalive { border-color: #2D4A3E; }
+  & #dreamy { border-color: #AD39D3; }
 }
- & #warmandcozy {
-  background-color: #D47B15;
-}
- & #joyful {
-  background-color: #e0d734;
-}
- & #freshandalive {
-  background-color:  #2D4A3E;;
-}
- & #dreamy {
-  background-color: #AD39D3;
-}
-}
+
 
  /* Styling the input range slider */
 
