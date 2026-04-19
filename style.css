@@ -50,7 +50,7 @@ dialog {
     margin: var(--base) auto;
     width: fit-content;
     cursor: pointer;
-    /* border: calc(var(--border) / 2) solid #8B3A1A; */
+    border: var(--border) solid var(--body-color);
     background-color: white;
     color: var(--body-color);
     padding: calc(var(--base) / 2);
@@ -100,7 +100,7 @@ dialog {
 }
 
 .modal-button {
-  background-color: var(--body-color);
+  /* background-color: var(--body-color); */
   padding: calc(var(--base) / 2);
   text-align: center;
   /* display: grid;
@@ -120,14 +120,6 @@ dialog {
   /* font-style: italic; */
 }
 
-/* .no-results {
-  margin: 0;
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-} */
 
 /* .drink-info, .drink-image {
   background-color: var(--background-color);
@@ -346,14 +338,14 @@ html {
   border-style: solid;
 
   &:is(#bold, #warmandcozy, #joyful, #freshandalive, #dreamy) {
-    background-color: white;
+    background-color: var(--backgorund-color);
   }
 
-  & #bold { border-color: #8B3A1A; }
-  & #warmandcozy { border-color: #D47B15; }
-  & #joyful { border-color: #e0d734; }
-  & #freshandalive { border-color: #2D4A3E; }
-  & #dreamy { border-color: #AD39D3; }
+  &#bold { border-color: #8B3A1A; }
+  &#warmandcozy { border-color: #D47B15; }
+  &#joyful { border-color: #e0d734; }
+  &#freshandalive { border-color: #2D4A3E; }
+  &#dreamy { border-color: #AD39D3; }
 }
 
 
