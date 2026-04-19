@@ -396,7 +396,7 @@ input[type="range"] {
 }
 /* The track (the line the thumb slides along) */
 input[type="range"]::-webkit-slider-runnable-track {
-   height: calc(var(--base) / 2);
+   /* height: calc(var(--base) / 2); */
 }
 
 /* Styling the thumb of the slider */
