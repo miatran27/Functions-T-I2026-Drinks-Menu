@@ -99,6 +99,16 @@ dialog {
   /* background-color: var(--body-color); */
 }
 
+
+#modal-results:after {
+  content: "";
+  position: absolute;
+  inset: calc(var(--base) / 2);
+  border: calc(var(--border) /2) solid #8B3A1A;
+  pointer-events: none;
+}
+
+
 .modal-button {
   /* background-color: var(--body-color); */
   padding: calc(var(--base) / 2);
@@ -178,7 +188,7 @@ form legend {
   margin-inline: auto;
   width: fit-content;
   padding: var(--base) calc(2 * var(--base));
-  background: #8B3A1A;  
+  background: var(--body-color);  
   color: var(--background-color);
   border-radius: 0;
   cursor: pointer;
@@ -303,7 +313,6 @@ html {
   align-items: center;
   justify-content: center;
 }
-
 
 
 .mood-buttons {
