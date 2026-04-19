@@ -110,11 +110,8 @@ dialog {
 
 
 .modal-button {
-  /* background-color: var(--body-color); */
   padding: calc(var(--base) / 2);
   text-align: center;
-  /* display: grid;
-  place-items: center; */
 }
 
 
@@ -388,10 +385,6 @@ html {
 
 
 
-
-
-
-
  /* Styling the input range slider */
 
 input[type="range"] {
@@ -433,13 +426,13 @@ input[type="range"]:focus {
 
 
 @media (min-width: 768px) {
- .mood-buttons button {
+.mood-buttons button {
     width: calc(8 * var(--base));
     height: calc(8 * var(--base));
     padding-inline: var(--base);
  }
 
- .modal-results {
+.modal-results {
   grid-template-rows: 1fr 2fr;
 }
 
@@ -484,14 +477,6 @@ width: calc(2 * var(--base));
 /* border: calc(2 * var(--border)) solid #8B3A1A; */
 }
 
-/* .modal-results img {
-  width: calc(30 * var(--base));
-  object-fit: contain;
-} */
-/* .drink-image {
-  height: 50vh;
-} */
-
 .slider-container {
   padding-block-start: calc(2 * var(--base));
 }
@@ -507,15 +492,11 @@ dialog {
   .modal-results {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
+    padding: calc(2 * var(--base));
   }
 
   .drink-image {
     justify-self: stretch;
-  }
-
-
-  .modal-results {
-    padding: calc(2 * var(--base));
   }
 
   dialog {
