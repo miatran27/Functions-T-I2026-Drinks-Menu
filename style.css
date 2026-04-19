@@ -342,20 +342,25 @@ html {
 
 
 .mood-buttons .selected {
-  color: var(--body-color);
   border-width: var(--border);
-  border-style: solid;
+  outline: calc(var(--border) * 2) solid;
+  outline-offset: calc(var(--base) / 4);
 
-  &:is(#bold, #warmandcozy, #joyful, #freshandalive, #dreamy) {
+  /* &:is(#bold, #warmandcozy, #joyful, #freshandalive, #dreamy) {
     background-color: var(--backgorund-color);
-  }
+  } */
 
-  &#bold { border-color: #8B3A1A; }
-  &#warmandcozy { border-color: #D47B15; }
-  &#joyful { border-color: #e0d734; }
-  &#freshandalive { border-color: #2D4A3E; }
-  &#dreamy { border-color: #AD39D3; }
+  &#bold { outline-color: #8B3A1A; }
+  &#warmandcozy { outline-color: #D47B15; }
+  &#joyful { outline-color: #e0d734; }
+  &#freshandalive { outline-color: #2D4A3E; }
+  &#dreamy { outline-color: #AD39D3; }
 }
+
+
+
+
+
 
 
  /* Styling the input range slider */
