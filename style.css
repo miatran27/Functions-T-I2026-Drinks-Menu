@@ -159,7 +159,7 @@ form legend {
   & input {
       display: block;
       margin: 0 auto;
-      width: calc(12 * var(--base));
+      width: calc(20 * var(--base));
   }
 
   & .slider-label {
@@ -170,7 +170,36 @@ form legend {
       padding-block-start: var(--base);
       color: #1C1410;
   }
+
+  & .slider-label span {
+    flex: 1;
+    text-align: center;
   }
+  & .slider-label span:first-child {
+    text-align: left;
+  }
+  & .slider-label span:last-child {
+    text-align: right;
+  }
+
+  }
+
+
+
+  datalist {
+    display: flex;
+    justify-content: space-between;
+    width: calc(20 * var(--base));
+    margin: 0 auto;
+  }
+  datalist option {
+    display: block;
+    width: var(--border);
+    height: calc(var(--base)/2);
+    background-color: var(--body-color);
+  }
+
+
 
   /* input[type="range"] {
   appearance: auto;
@@ -374,7 +403,6 @@ input[type="range"] {
 }
 /* The track (the line the thumb slides along) */
 input[type="range"]::-webkit-slider-runnable-track {
-
 }
 
 /* Styling the thumb of the slider */
@@ -386,6 +414,7 @@ input[type="range"]::-webkit-slider-thumb {
   width: calc(2 * var(--base));
   background-color: white;
   cursor: grab;
+  transform: translateY(-25%);
 }
 
 /* Same thing as the code above but styling that works for Firefox browser */
@@ -434,6 +463,14 @@ input[type="range"]:focus {
 
 input[type="range"] {
   width: calc(30*var(--base));
+}
+
+
+datalist {
+  display: flex;
+  justify-content: space-between;
+  width: calc(30 * var(--base));
+  margin: 0 auto;
 }
 
 .slider-container .slider-label {
