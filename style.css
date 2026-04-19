@@ -369,7 +369,7 @@ input[type="range"] {
   -webkit-appearance: none;
   appearance: none;
   width: calc(20 * var(--base));
-  background: linear-gradient(to right, #3bade3 0%, #3b82f6 50%, #1e40af 100%);
+  background: linear-gradient(to right,  #c48f6a 0%, #6e4a34 50%, #291d17 100%);
   height: calc(var(--base) / 2);
 }
 /* The track (the line the thumb slides along) */
@@ -382,15 +382,15 @@ input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   border: var(--border) solid #8B3A1A;
   border-radius: 50%;
-  height: calc(1.5 * var(--base));
-  width: calc(1.5 * var(--base));
+  height: calc(2 * var(--base));
+  width: calc(2 * var(--base));
   background-color: white;
   cursor: grab;
 }
 
-/* Same thing but styling that worksfor Firefox */
+/* Same thing as the code above but styling that works for Firefox browser */
 input[type="range"]::-moz-range-thumb {
-  border: var(--border) solid #9844b7;
+  border: var(--border) solid #8B3A1A;
   border-radius: 50%;
   height: calc(1.5 * var(--base));
   width: calc(1.5 * var(--base));
@@ -444,7 +444,7 @@ input[type="range"] {
 input[type="range"]::-webkit-slider-thumb {
 height: calc(2 * var(--base));
 width: calc(2 * var(--base));
-border: calc(2 * var(--border)) solid #8B3A1A;
+/* border: calc(2 * var(--border)) solid #8B3A1A; */
 }
 
 /* .modal-results img {
