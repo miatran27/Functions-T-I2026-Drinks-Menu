@@ -6,9 +6,10 @@
   --base: 1rem;
   --padding: var(--base);
   --h2: 2rem;
-  --p: 0.8rem;
+  --to-top-button: 0.8rem;
   --border: calc(var(--base) / 8); 
   --font-heading: "Cormorant Garamond", serif;
+  --slider-width: 20rem;
 }
 
 body {
@@ -147,13 +148,13 @@ form legend {
   & input {
       display: block;
       margin: 0 auto;
-      width: calc(20 * var(--base));
+      width: var(--slider-width);
   }
 
   & .slider-label {
       display: flex;
       justify-content: space-between;
-      width: calc(20 * var(--base));
+      width: var(--slider-width);
       margin: 0 auto;
       padding-block-start: var(--base);
       color: #1C1410;
@@ -297,7 +298,7 @@ form legend {
   text-decoration: none;
   cursor: pointer;
   color: #1C1410;
-  font-size: var(--p);
+  font-size: var(--to-top-button);
 }
 
 html {
@@ -364,7 +365,7 @@ html {
 input[type="range"] {
   -webkit-appearance: none;
   appearance: none;
-  width: calc(20 * var(--base));
+  width: var(--slider-width);
   background: linear-gradient(to right,  #c48f6a 0%, #6e4a34 50%, #291d17 100%);
   height: calc(var(--base) / 2);
 }
@@ -431,7 +432,7 @@ form legend {
 }
 
 input[type="range"] {
-  width: calc(30*var(--base));
+  width: calc(1.5 * var(--slider-width));
 }
 
 
@@ -443,8 +444,8 @@ datalist {
 }
 
 .slider-container .slider-label {
-  width: calc(30*var(--base));
-  font-size: calc(1.5*var(--base));
+  width: calc(1.5 * var(--slider-width));
+  font-size: calc(1.5 * var(--base));
 }
 
 input[type="range"]::-webkit-slider-thumb {
