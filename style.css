@@ -90,7 +90,6 @@ dialog {
   grid-template-rows: 1fr 1fr;
   justify-items: center;
   min-height: 0;
-  /* background-color: var(--body-color); */
 }
 
 
@@ -159,7 +158,6 @@ form legend {
       padding-block-start: var(--base);
       color: #1C1410;
   }
-
   & .slider-label span {
     flex: 1;
     text-align: center;
@@ -170,7 +168,6 @@ form legend {
   & .slider-label span:last-child {
     text-align: right;
   }
-
   }
 
   /* datalist {
@@ -229,6 +226,8 @@ form legend {
   left: 0;
   z-index: 1;
   padding: calc(2 * var(--base));
+  display: grid;
+  place-items: center;
 }
 
 .hero::after {
@@ -274,10 +273,10 @@ form legend {
 }
 
 .herobutton {
-  position: absolute;
+  /* position: absolute;
   left: 0%;
   right: 0%;
-  bottom: calc(3 * var(--base));
+  bottom: calc(3 * var(--base)); */
   margin-inline: auto;
   width: fit-content;
   padding: var(--base);
@@ -287,18 +286,6 @@ form legend {
   cursor: pointer;
 } 
 
-/* .scrollicon {
-  width: calc(1.5 * var(--base));
-  height: calc(1.5 * var(--base));
-  border-left: calc(var(--base) / 5) solid black;
-  border-bottom: calc(var(--base) / 5) solid black;
-  transform: rotate(-45deg);
-}
-
-@keyframes scroll-bounce {
-  0%, 100% { transform: translateX(-50%) translateY(0); }
-  50% { transform: translateX(-50%) translateY(6px); }
-} */
 
 .back-to-top {
   position: absolute;
