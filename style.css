@@ -115,7 +115,7 @@ dialog {
 
 .drink-ingredients {
   padding-block-end: calc(2* var(--base));
-  /* font-style: italic; */
+  opacity: 65%;
 }
 
 
