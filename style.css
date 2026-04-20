@@ -57,12 +57,6 @@ dialog {
 }
 }
 
-/* .close-button {
-  position: absolute;
-  top: var(--base);
-  right: var(--base);
-  z-index: 1; 
-} */
 
 .modal-results h2 {
   /* padding-block-start: calc(2 * var(--base)); */
@@ -113,8 +107,6 @@ dialog {
   padding: calc(var(--base) / 2);
   text-align: center;
 }
-
-
 
 
 .drink-name {
@@ -181,8 +173,6 @@ form legend {
 
   }
 
-
-
   /* datalist {
     display: flex;
     justify-content: space-between;
@@ -198,9 +188,11 @@ form legend {
 
 
 
-  /* input[type="range"] {
+  input[type="range"] {
   appearance: auto;
-} */
+}
+
+
 /*LLM chat reference: https://claude.ai/share/8f6e3d1d-96b0-4757-a029-7830f6eb9cf0 */
 /*I used Claude to find how I could bring back my slider after I added my reset CSS in. Additionally, I also wanted to see how I could target and style different parts of the slider. Got some feedback from instructors to give more context and ask more specific narrow questions to get better answers on understanding how the code works, and looked up some other resources as well to find how to style sliders.  */
 
@@ -249,7 +241,6 @@ form legend {
 
 .herotext {
   text-align: center;
-  /* padding-block-start: calc(4 * var(--base));  */
   text-align: center;
   color: #FAF6EE;
 }
@@ -372,10 +363,6 @@ html {
   outline: calc(var(--border) * 2) solid;
   outline-offset: calc(var(--base) / 4);
 
-  /* &:is(#bold, #warmandcozy, #joyful, #freshandalive, #dreamy) {
-    background-color: var(--backgorund-color);
-  } */
-
   &#bold { outline-color: #8B3A1A; }
   &#warmandcozy { outline-color: #D47B15; }
   &#joyful { outline-color: #e0d734; }
@@ -396,7 +383,7 @@ input[type="range"] {
 }
 /* The track (the line the thumb slides along) */
 input[type="range"]::-webkit-slider-runnable-track {
-   /* height: calc(var(--base) / 2); */
+  */
 }
 
 /* Styling the thumb of the slider */
@@ -446,7 +433,7 @@ input[type="range"]:focus {
   padding: var(--base);
 }
 
- form legend {
+form legend {
   font-weight: 600;
   padding-block-end: calc(2 * var(--base));
   font-size: calc(1.5 * var(--h2));
@@ -486,7 +473,6 @@ width: calc(2 * var(--base));
 dialog {
   height: 85vh;
 }
-
 }
 
 
