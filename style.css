@@ -33,7 +33,6 @@ dialog {
   position: fixed; 
   width: 80vw;
   height: 80vh;
-  /* gap: calc(3 * var(--base)); */
   inset: 0;
   margin: auto;
   overflow: hidden;
@@ -128,7 +127,7 @@ form legend {
   text-align: center;
   padding-block-end: calc(2 * var(--base));
   font-size: var(--h2);
-  color: #1C1410;
+  color: var(--body-color);
 }
 
 .slider-container {
@@ -220,8 +219,8 @@ form legend {
   &::after {
     content: "";
     position: absolute;
-    inset: var(--base);
-    border: calc(var(--border) /2) solid var(--background-color);
+    inset: calc(1 * var(--base));
+    border: var(--border) solid var(--background-color);
     pointer-events: none;
   }
 }
@@ -282,7 +281,7 @@ form legend {
   width: fit-content;
   text-decoration: none;
   cursor: pointer;
-  color: #1C1410;
+  color: var(--body-color);
   font-size: var(--to-top-button);
 }
 
@@ -466,6 +465,12 @@ dialog {
   height: 85vh;
 }
 
+
+.hero {
+  &::after {
+    inset: calc(2 * var(--base));
+  }
+
 .herotext p {
   font-size: calc(1.5 * var(--base));
   /* max-with: 30ch; */
@@ -503,6 +508,12 @@ dialog {
   .drink-info {
     text-align: left;
   }
+
+
+  .hero {
+    &::after {
+      inset: calc(3 * var(--base));
+    }
 }
 
 
