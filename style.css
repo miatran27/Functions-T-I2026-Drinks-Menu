@@ -3,6 +3,11 @@
   font-family: "DM Sans", sans-serif;
 	--background-color: #FAF6EE;
   --hero-color: #291d17;
+  --bold: #7B1F1F;
+  --warmandcozy: #9B4A00;
+  --joyful: #ddd41e;
+  --freshandalive: #2c4a2e;
+  --dreamy: #4A2458;
   --base: 1rem;
   --padding: var(--base);
   --h2: 2rem;
@@ -10,11 +15,9 @@
   --border: calc(var(--base) / 8); 
   --font-heading: "Cormorant Garamond", serif;
   --slider-width: 20rem;
-  --bold: #7B1F1F;
-  --warmandcozy: #9B4A00;
-  --joyful: #ddd41e;
-  --freshandalive: #2c4a2e;
-  --dreamy: #4A2458;
+  --button-padding: 1rem 2rem;
+  --modal-padding: 1.5rem;
+  --title-gap: calc(2 * var(--base));
 }
 
 body {
@@ -56,13 +59,15 @@ dialog {
     border: calc(var(--border) /2) solid #7B1F1F;
     background-color: white;
     color: #7B1F1F;
-    padding: calc(var(--base) / 2);
+    /* padding: calc(var(--base) / 2); */
+    padding: calc(var(--base) / 2) var(--base);
 }
 }
 
 
 .modal-results {
-  padding: calc(var(--base) / 2);
+  padding: var(--modal-padding);
+  /* padding: var(--base); */
   display: grid;
   grid-template-rows: 1fr 1fr;
   justify-items: center;
@@ -91,9 +96,9 @@ dialog {
   justify-self: stretch;
 }
 
-.drink-info {
+/* .drink-info {
   padding: var(--base);
-}
+} */
 
 #modal-results:after {
   content: "";
@@ -116,7 +121,7 @@ dialog {
 }
 
 .drink-ingredients {
-  padding-block-end: calc(2* var(--base));
+  padding-block-end: var(--title-gap);
   opacity: 65%;
   color: var(--hero-color);
 }
@@ -140,8 +145,8 @@ form legend {
 
   label {
       display: block;
-      padding-block-start: calc(3 * var(--base));
-      padding-block-end: calc(2 * var(--base));
+      padding-block-start: calc(1.5 * var(--title-gap));
+      padding-block-end: var(--title-gap);
       color: #1C1410;
       font-size: var(--base);
       max-width: 25ch;
@@ -186,15 +191,13 @@ form legend {
 
 
 .submit-button {
-  /* text-align: center; */
-  /* padding-block-start: calc(2 * var(--base)); */
   position: absolute;
   left: 0%;
   right: 0%;
   bottom: calc(3 * var(--base));
   margin-inline: auto;
   width: fit-content;
-  padding: var(--base) calc(2 * var(--base));
+  padding: var(--button-padding);
   background: var(--hero-color);  
   color: var(--background-color);
   border-radius: 0;
@@ -241,8 +244,7 @@ form legend {
     font-family: var(--font-heading);
     font-weight: 600;
     font-size: calc(3 * var(--base));
-    padding-block-end: calc(2 * var(--base));
-    /* padding-block-start: calc(3 * var(--base)); */
+    padding-block-end: var(--title-gap);
   }
 
   em {
@@ -269,7 +271,7 @@ form legend {
 .herobutton {
   margin-inline: auto;
   width: fit-content;
-  padding: var(--base);
+  padding: var(--button-padding);
   background: #FAF6EE;  
   color: black;
   border-radius: 0;
@@ -416,22 +418,24 @@ input[type="range"] {
 }
 
 .drink-info {
-  padding: var(--base);
+  padding: var(--modal-padding);
 }
 
-.modal-results img {
+/* .modal-results img {
   padding: var(--base);
-}
+} */
 
 .drink-info {
   max-width: 90ch;
-  padding-block-start: calc(1.5*var(--base));
-  /* text-align: center; */
+}
+
+.modal-button {
+  padding: 1.5rem;
 }
 
 form legend {
   font-weight: 600;
-  padding-block-end: calc(2 * var(--base));
+  padding-block-end: var(--title-gap);
   font-size: calc(1.5 * var(--h2));
 }
 
@@ -487,7 +491,7 @@ dialog {
   .modal-results {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
-    padding: calc(2 * var(--base));
+    padding: var(--modal-padding);
   }
 
   .drink-image {
@@ -505,12 +509,14 @@ dialog {
 
   .drink-info {
     border-right: calc(var(--border) / 2) solid var(--hero-color);
-    padding-right: var(--base);
+    padding: var(--modal-padding);
+    padding-inline-end: 3rem;
     justify-self: stretch;
   }
 
   .drink-info {
     text-align: left;
+    /* padding-inline-start: 2rem; */
   }
 
 
