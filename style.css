@@ -40,14 +40,12 @@ dialog {
   display: grid;
   grid-template-rows: 1fr auto;
 
- 
-
   &::backdrop {
 		background-color: rgb(0 0 0 / 66%); /* A dark overlay. */
 		pointer-events: none; /* Let clicks pass through to our `document` listener. */
 	}
 
-  & .back-to-beginning {
+  .back-to-beginning {
     margin: var(--base) auto;
     width: fit-content;
     cursor: pointer;
@@ -136,7 +134,7 @@ form legend {
 .slider-container {
   text-align: center;
 
-  & label {
+  label {
       display: block;
       padding-block-start: calc(3 * var(--base));
       padding-block-end: calc(2 * var(--base));
@@ -145,31 +143,28 @@ form legend {
       max-width: 25ch;
       margin-inline: auto;
   }
-  & input {
+  input {
       display: block;
       margin: 0 auto;
       width: var(--slider-width);
   }
 
-  & .slider-label {
+.slider-label {
       display: flex;
       justify-content: space-between;
       width: var(--slider-width);
       margin: 0 auto;
       padding-block-start: var(--base);
       color: #1C1410;
+  
+      span {
+        flex: 1;
+        text-align: center;
+      }
+      span:first-child { text-align: left; }
+      span:last-child { text-align: right; }
   }
-  & .slider-label span {
-    flex: 1;
-    text-align: center;
-  }
-  & .slider-label span:first-child {
-    text-align: left;
-  }
-  & .slider-label span:last-child {
-    text-align: right;
-  }
-  }
+}
 
   /* datalist {
     display: flex;
@@ -185,14 +180,6 @@ form legend {
   } */
 
 
-
-  input[type="range"] {
-  appearance: auto;
-}
-
-
-/*LLM chat reference: https://claude.ai/share/8f6e3d1d-96b0-4757-a029-7830f6eb9cf0 */
-/*I used Claude to find how I could bring back my slider after I added my reset CSS in. Additionally, I also wanted to see how I could target and style different parts of the slider. Got some feedback from instructors to give more context and ask more specific narrow questions to get better answers on understanding how the code works, and looked up some other resources as well to find how to style sliders.  */
 
 .submit-button {
   /* text-align: center; */
@@ -229,39 +216,39 @@ form legend {
   padding: calc(2 * var(--base));
   display: grid;
   place-items: center;
-}
 
-.hero::after {
-  content: "";
-  position: absolute;
-  inset: var(--base);
-  border: calc(var(--border) /2) solid #B8860B;
-  pointer-events: none;
+  &::after {
+    content: "";
+    position: absolute;
+    inset: var(--base);
+    border: calc(var(--border) /2) solid #B8860B;
+    pointer-events: none;
+  }
 }
 
 .herotext {
   text-align: center;
   text-align: center;
   color: #FAF6EE;
-}
 
-.herotext h1 {
-  font-family: var(--font-heading);
-  font-weight: 600;
-  font-size: calc(3 * var(--base));
-  padding-block-end: calc(2 * var(--base));
-  padding-block-start: calc(3 * var(--base));
 
-}
+  h1 {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: calc(3 * var(--base));
+    padding-block-end: calc(2 * var(--base));
+    padding-block-start: calc(3 * var(--base));
+  }
 
-.herotext em {
-  font-style: italic;
-  color: #B8860B;
-}
+  em {
+    font-style: italic;
+    color: #B8860B;
+  }
 
-.herotext p {
-  max-width: 25ch;
-  margin-inline: auto;
+  p {
+    max-width: 25ch;
+    margin-inline: auto;
+  }
 }
 
 
@@ -327,7 +314,7 @@ html {
   row-gap: calc(var(--base) / 2);
   flex-wrap: wrap;
 
- & button {
+  button {
   background-color: white;
   border-radius: 50%;
   width: calc(6.5 * var(--base));
@@ -338,11 +325,11 @@ html {
   color: white;
 }
 
- & #bold { background-color: #8B3A1A; }
- & #warmandcozy { background-color: #D47B15; }
- & #joyful { background-color: #e0d734; }
- & #freshandalive { background-color:  #2D4A3E; }
- & #dreamy { background-color: #AD39D3; }
+ #bold { background-color: #8B3A1A; }
+ #warmandcozy { background-color: #D47B15; }
+ #joyful { background-color: #e0d734; }
+ #freshandalive { background-color:  #2D4A3E; }
+ #dreamy { background-color: #AD39D3; }
 }
 
 
@@ -360,6 +347,16 @@ html {
 
 
 
+
+input[type="range"] {
+  appearance: auto;
+}
+
+
+/*LLM chat reference: https://claude.ai/share/8f6e3d1d-96b0-4757-a029-7830f6eb9cf0 */
+/*I used Claude to find how I could bring back my slider after I added my reset CSS in. Additionally, I also wanted to see how I could target and style different parts of the slider. Got some feedback from instructors to give more context and ask more specific narrow questions to get better answers on understanding how the code works, and looked up some other resources as well to find how to style sliders.  */
+
+
  /* Styling the input range slider */
 
 input[type="range"] {
@@ -368,37 +365,38 @@ input[type="range"] {
   width: var(--slider-width);
   background: linear-gradient(to right,  #c48f6a 0%, #6e4a34 50%, #291d17 100%);
   height: calc(var(--base) / 2);
-}
+
 /* The track (the line the thumb slides along) */
-input[type="range"]::-webkit-slider-runnable-track {
-  */
-}
+  /* &::-webkit-slider-runnable-track {
+  
+} */
 
 /* Styling the thumb of the slider */
-input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  border: var(--border) solid #8B3A1A;
-  border-radius: 50%;
-  height: calc(2 * var(--base));
-  width: calc(2 * var(--base));
-  background-color: white;
-  cursor: grab;
-  /* transform: translateY(-25%); */
-  /* margin-top: calc((var(--base) / 2 - 2 * var(--base)) / 2) */
-}
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: var(--border) solid #8B3A1A;
+    border-radius: 50%;
+    height: calc(2 * var(--base));
+    width: calc(2 * var(--base));
+    background-color: white;
+    cursor: grab;
+    /* transform: translateY(-25%); */
+    /* margin-top: calc((var(--base) / 2 - 2 * var(--base)) / 2) */
+  }
 
 /* Same thing as the code above but styling that works for Firefox browser */
-input[type="range"]::-moz-range-thumb {
-  border: var(--border) solid #8B3A1A;
-  border-radius: 50%;
-  height: calc(1.5 * var(--base));
-  width: calc(1.5 * var(--base));
-  background-color: white;
-  cursor: grab;
-}
+  &::-moz-range-thumb {
+    border: var(--border) solid #8B3A1A;
+    border-radius: 50%;
+    height: calc(1.5 * var(--base));
+    width: calc(1.5 * var(--base));
+    background-color: white;
+    cursor: grab;
+  }
 
-input[type="range"]:focus {
-  outline: none;
+  &:focus {
+    outline: none;
+  }
 }
 
 
