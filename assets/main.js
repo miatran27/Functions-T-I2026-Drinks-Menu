@@ -95,11 +95,11 @@ let form = document.querySelector('form')
 
 //Getting my modal set up to open up and close
 let modalDialog = document.querySelector('#dialog')
-// let closeButton = modalDialog.querySelector('button')
+let closeButton = modalDialog.querySelector('button')
 
-// closeButton.addEventListener('click', () => {
-//     modalDialog.close()
-// })
+closeButton.addEventListener('click', () => {
+    modalDialog.close()
+})
 
 //This allows user to click the area outside of the modal and modal can still close, without having to click the Close button. 
 // Result is still saved when user closes modal and goes back the form.
@@ -124,7 +124,12 @@ backButton.addEventListener('click', () => {
 //The selected button border gets reset when user clicks "back to top" from the form screen
 let backToTop = document.querySelector('.back-to-top')
 backToTop.addEventListener('click', () => {
+
+  selectedMood = null
+  form.reset()
+//   submitButton.setAttribute('disabled', '')
   buttons.forEach(otherButton => otherButton.classList.remove('selected'))
+  submitButton.setAttribute('disabled', '')
 })
 
 
