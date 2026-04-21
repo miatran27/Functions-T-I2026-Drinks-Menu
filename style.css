@@ -142,10 +142,11 @@ form legend {
 
 .slider-container {
   text-align: center;
+  padding-block-start: calc(1.5 * var(--title-gap));
 
   label {
       display: block;
-      padding-block-start: calc(1.5 * var(--title-gap));
+      /* padding-block-start: calc(1.5 * var(--title-gap)); */
       padding-block-end: var(--title-gap);
       color: #1C1410;
       font-size: var(--base);
@@ -264,8 +265,7 @@ form legend {
   display: block;
   max-width: 50%;        
   margin-inline: auto; 
-  padding-block-start: calc(3 * var(--base));
-  
+  /* padding-block-start: calc(3 * var(--base)); */
 }
 
 .herobutton {
@@ -419,18 +419,15 @@ input[type="range"] {
 
 .drink-info {
   padding: var(--modal-padding);
+  max-width: 90ch;
 }
 
 /* .modal-results img {
   padding: var(--base);
 } */
 
-.drink-info {
-  max-width: 90ch;
-}
-
 .modal-button {
-  padding: 1.5rem;
+  padding: var(--modal-padding);
 }
 
 form legend {
@@ -442,7 +439,6 @@ form legend {
 .slider-container label {
   font-size: calc(1.5*var(--base));
 }
-
 
 datalist {
   display: flex;
@@ -466,14 +462,9 @@ input[type="range"] {
   }
 }
 
-.slider-container {
-  padding-block-start: calc(2 * var(--base));
-}
-
 dialog {
   height: 85vh;
 }
-
 
 .hero {
   &::after {
