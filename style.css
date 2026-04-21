@@ -57,20 +57,28 @@ dialog {
 }
 
 
-.modal-results h2 {
-  /* padding-block-start: calc(2 * var(--base)); */
-  font-family: var(--font-heading);
-  font-weight: 600;
-  font-style: italic;
-  color: #8B3A1A
-}
+.modal-results {
+  padding: calc(var(--base) / 2);
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  min-height: 0;
 
-.modal-results img {
-  display: block;
-  margin-inline: auto;
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
+  h2 {
+    /* padding-block-start: calc(2 * var(--base)); */
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-style: italic;
+    color: #8B3A1A
+  }
+
+  img {
+    display: block;
+    margin-inline: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
 }
 
 .drink-image {
@@ -82,15 +90,6 @@ dialog {
 .drink-info {
   padding: var(--base);
 }
-
-.modal-results {
-  padding: calc(var(--base) / 2);
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  justify-items: center;
-  min-height: 0;
-}
-
 
 #modal-results:after {
   content: "";
@@ -429,10 +428,6 @@ form legend {
   font-size: calc(1.5*var(--base));
 }
 
-input[type="range"] {
-  width: calc(1.5 * var(--slider-width));
-}
-
 
 datalist {
   display: flex;
@@ -446,10 +441,14 @@ datalist {
   font-size: calc(1.5 * var(--base));
 }
 
-input[type="range"]::-webkit-slider-thumb {
-height: calc(2 * var(--base));
-width: calc(2 * var(--base));
-/* border: calc(2 * var(--border)) solid #8B3A1A; */
+input[type="range"] {
+  width: calc(1.5 * var(--slider-width));
+
+  &::-webkit-slider-thumb {
+  height: calc(2 * var(--base));
+  width: calc(2 * var(--base));
+  /* border: calc(2 * var(--border)) solid #8B3A1A; */
+  }
 }
 
 .slider-container {
