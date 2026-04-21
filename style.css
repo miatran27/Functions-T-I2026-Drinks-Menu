@@ -71,7 +71,7 @@ dialog {
   display: grid;
   grid-template-rows: 1fr 1fr;
   justify-items: center;
-  min-height: 0;
+  min-block-size: 0;
 
   h2 {
     /* padding-block-start: calc(2 * var(--base)); */
@@ -84,15 +84,15 @@ dialog {
   img {
     display: block;
     margin-inline: auto;
-    max-width: 100%;
-    max-height: 100%;
+    /* max-width: 100%;
+    max-height: 100%; */
     object-fit: contain;
   }
 }
 
 .drink-image {
   overflow: hidden;
-  min-height: 0;
+  /* min-height: 0; */
   justify-self: stretch;
 }
 
@@ -193,9 +193,8 @@ form legend {
 
 .submit-button {
   position: absolute;
-  left: 0%;
-  right: 0%;
-  bottom: calc(3 * var(--base));
+  inset-inline: 0%;
+  inset-block-end: calc(3 * var(--base));
   margin-inline: auto;
   width: fit-content;
   padding: var(--button-padding);
@@ -218,8 +217,8 @@ form legend {
   width: 100vw;
   height: 100vh;
   position: fixed;
-  top: 0;
-  left: 0;
+  inset-block-start: 0%;
+
   z-index: 1;
   padding: calc(2 * var(--base));
   display: grid;
@@ -281,9 +280,8 @@ form legend {
 
 .back-to-top {
   position: absolute;
-  top: calc(2 * var(--base));
-  left: 0;
-  right: 0;
+  inset-block-start: calc(2 * var(--base));
+  inset-inline: 0;
   margin-inline: auto;
   width: fit-content;
   text-decoration: none;
@@ -302,7 +300,7 @@ html {
   width: 100vw;
   height: 100vh;
   position: relative;
-  margin-top: 100vh;
+  margin-block-start: 100vh;
   z-index: 1;
   background-color: var(--background-color);
   display: flex;
@@ -331,8 +329,8 @@ html {
   button {
   background-color: white;
   border-radius: 50%;
-  width: calc(6.5 * var(--base));
-  height: calc(6.5 * var(--base));
+  inline-size: calc(6.5 * var(--base));
+  block-size: calc(6.5 * var(--base));
   cursor: pointer;
   text-align: center;
   font-size: var(--base);
@@ -373,9 +371,9 @@ input[type="range"] {
 input[type="range"] {
   -webkit-appearance: none;
   appearance: none;
-  width: var(--slider-width);
+  inline-size: var(--slider-width);
   background: linear-gradient(to right,  #c48f6a 0%, #6e4a34 50%, #291d17 100%);
-  height: calc(var(--base) / 2);
+  block-size: calc(var(--base) / 2);
 
 /* Styling the thumb of the slider */
   &::-webkit-slider-thumb {
@@ -394,8 +392,8 @@ input[type="range"] {
   &::-moz-range-thumb {
     border: var(--border) solid #8B3A1A;
     border-radius: 50%;
-    height: calc(1.5 * var(--base));
-    width: calc(1.5 * var(--base));
+    block-size: calc(1.5 * var(--base));
+    inline-size: calc(1.5 * var(--base));
     background-color: white;
     cursor: grab;
   }
@@ -408,8 +406,8 @@ input[type="range"] {
 
 @media (min-width: 768px) {
 .mood-buttons button {
-    width: calc(8 * var(--base));
-    height: calc(8 * var(--base));
+    inline-size: calc(8 * var(--base));
+    block-size: calc(8 * var(--base));
     padding-inline: var(--base);
  }
 
@@ -440,24 +438,24 @@ form legend {
   font-size: calc(1.5*var(--base));
 }
 
-datalist {
+/* datalist {
   display: flex;
   justify-content: space-between;
   width: calc(30 * var(--base));
   margin: 0 auto;
-}
+} */
 
 .slider-container .slider-label {
-  width: calc(1.5 * var(--slider-width));
+  inline-size: calc(1.5 * var(--slider-width));
   font-size: calc(1.5 * var(--base));
 }
 
 input[type="range"] {
-  width: calc(1.5 * var(--slider-width));
+  inline-size: calc(1.5 * var(--slider-width));
 
   &::-webkit-slider-thumb {
-  height: calc(2 * var(--base));
-  width: calc(2 * var(--base));
+  block-size: calc(2 * var(--base));
+  inline-size: calc(2 * var(--base));
   /* border: calc(2 * var(--border)) solid #8B3A1A; */
   }
 }
@@ -509,6 +507,12 @@ dialog {
     text-align: left;
     /* padding-inline-start: 2rem; */
   }
+
+  /* .modal-button {
+    padding: 1rem;
+    text-align: center;
+  } */
+  
 
 
   /* .hero {
