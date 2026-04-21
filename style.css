@@ -49,9 +49,9 @@ dialog {
     margin: var(--base) auto;
     width: fit-content;
     cursor: pointer;
-    border: var(--border) solid var(--body-color);
+    border: calc(var(--border) /2) solid #7B1F1F;
     background-color: white;
-    color: var(--body-color);
+    color: #7B1F1F;
     padding: calc(var(--base) / 2);
 }
 }
@@ -69,7 +69,7 @@ dialog {
     font-family: var(--font-heading);
     font-weight: 600;
     font-style: italic;
-    color: #8B3A1A
+    color: #7B1F1F;
   }
 
   img {
@@ -95,7 +95,7 @@ dialog {
   content: "";
   position: absolute;
   inset: calc(var(--base) / 2);
-  border: calc(var(--border) /2) solid #8B3A1A;
+  border: calc(var(--border) /2) solid #7B1F1F;
   pointer-events: none;
 }
 
@@ -114,6 +114,7 @@ dialog {
 .drink-ingredients {
   padding-block-end: calc(2* var(--base));
   opacity: 65%;
+  color: var(--body-color);
 }
 
 
@@ -214,13 +215,13 @@ form legend {
   z-index: 1;
   padding: calc(2 * var(--base));
   display: grid;
-  place-items: center;
+  place-content: center;
 
   &::after {
     content: "";
     position: absolute;
     inset: var(--base);
-    border: calc(var(--border) /2) solid #B8860B;
+    border: calc(var(--border) /2) solid var(--background-color);
     pointer-events: none;
   }
 }
@@ -228,7 +229,8 @@ form legend {
 .herotext {
   text-align: center;
   text-align: center;
-  color: #FAF6EE;
+  color: var(--background-color);
+  padding-block-end: calc(6 * var(--base));
 
 
   h1 {
@@ -236,17 +238,18 @@ form legend {
     font-weight: 600;
     font-size: calc(3 * var(--base));
     padding-block-end: calc(2 * var(--base));
-    padding-block-start: calc(3 * var(--base));
+    /* padding-block-start: calc(3 * var(--base)); */
   }
 
   em {
     font-style: italic;
-    color: #B8860B;
+    color: #ae8407;
   }
 
   p {
-    max-width: 25ch;
+    max-width: 40ch;
     margin-inline: auto;
+    opacity: 65%;
   }
 }
 
@@ -260,10 +263,6 @@ form legend {
 }
 
 .herobutton {
-  /* position: absolute;
-  left: 0%;
-  right: 0%;
-  bottom: calc(3 * var(--base)); */
   margin-inline: auto;
   width: fit-content;
   padding: var(--base);
@@ -303,6 +302,16 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  /* &::after {
+    content: "";
+    position: absolute;
+    inset: var(--base);
+    border: calc(var(--border) /2) solid #B8860B;
+    pointer-events: none;
+  } */
+
+
 }
 
 
@@ -324,11 +333,11 @@ html {
   color: white;
 }
 
- #bold { background-color: #8B3A1A; }
- #warmandcozy { background-color: #D47B15; }
- #joyful { background-color: #e0d734; }
- #freshandalive { background-color:  #2D4A3E; }
- #dreamy { background-color: #AD39D3; }
+ #bold { background-color: #7B1F1F; }
+ #warmandcozy { background-color: #9B4A00; }
+ #joyful { background-color: #ddd41e; }
+ #freshandalive { background-color:  #2C4A2E; }
+ #dreamy { background-color: #4A2458; }
 }
 
 
@@ -337,11 +346,11 @@ html {
   outline: calc(var(--border) * 2) solid;
   outline-offset: calc(var(--base) / 4);
 
-  &#bold { outline-color: #8B3A1A; }
-  &#warmandcozy { outline-color: #D47B15; }
-  &#joyful { outline-color: #e0d734; }
-  &#freshandalive { outline-color: #2D4A3E; }
-  &#dreamy { outline-color: #AD39D3; }
+  &#bold { outline-color: #7B1F1F; }
+  &#warmandcozy { outline-color: #9B4A00; }
+  &#joyful { outline-color: #ddd41e; }
+  &#freshandalive { outline-color: #2C4A2E; }
+  &#dreamy { outline-color: #4A2458; }
 }
 
 
@@ -350,14 +359,11 @@ html {
 input[type="range"] {
   appearance: auto;
 }
-
-
 /*LLM chat reference: https://claude.ai/share/8f6e3d1d-96b0-4757-a029-7830f6eb9cf0 */
 /*I used Claude to find how I could bring back my slider after I added my reset CSS in. Additionally, I also wanted to see how I could target and style different parts of the slider. Got some feedback from instructors to give more context and ask more specific narrow questions to get better answers on understanding how the code works, and looked up some other resources as well to find how to style sliders.  */
 
 
  /* Styling the input range slider */
-
 input[type="range"] {
   -webkit-appearance: none;
   appearance: none;
@@ -365,15 +371,10 @@ input[type="range"] {
   background: linear-gradient(to right,  #c48f6a 0%, #6e4a34 50%, #291d17 100%);
   height: calc(var(--base) / 2);
 
-/* The track (the line the thumb slides along) */
-  /* &::-webkit-slider-runnable-track {
-  
-} */
-
 /* Styling the thumb of the slider */
   &::-webkit-slider-thumb {
     -webkit-appearance: none;
-    border: var(--border) solid #8B3A1A;
+    border: var(--border) solid var(--body-color);
     border-radius: 50%;
     height: calc(2 * var(--base));
     width: calc(2 * var(--base));
@@ -418,6 +419,12 @@ input[type="range"] {
   padding: var(--base);
 }
 
+.drink-info {
+  max-width: 90ch;
+  padding-block-start: calc(1.5*var(--base));
+  /* text-align: center; */
+}
+
 form legend {
   font-weight: 600;
   padding-block-end: calc(2 * var(--base));
@@ -458,6 +465,12 @@ input[type="range"] {
 dialog {
   height: 85vh;
 }
+
+.herotext p {
+  font-size: calc(1.5 * var(--base));
+  /* max-with: 30ch; */
+}
+
 }
 
 
@@ -485,6 +498,10 @@ dialog {
     border-right: calc(var(--border) / 2) solid var(--body-color);
     padding-right: var(--base);
     justify-self: stretch;
+  }
+
+  .drink-info {
+    text-align: left;
   }
 }
 
