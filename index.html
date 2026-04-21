@@ -21,60 +21,54 @@
 
 
     <body>
-        <section id="hero" class="hero">
+        <header id="hero" class="hero">
             <!-- <img src="Images/herotest.png" alt="Hero image" class="heroimage"> -->
-
-            <section class="herotext">
-                <h1>How are you <em>feeling</em> tonight? </h1>
+            <div class="herotext">
+                    <h1>How are you <em>feeling</em> tonight? </h1>
                     <p>Every cocktail tells a story. Whether you're winding down, celebrating, or somewhere in between, share your mood and we'll craft the perfect drink for you right now.</p>
-            </section> 
+            </div> 
 
             <!-- <img src="Images/heroimage.png" alt="Hero image" class="heroimage"> -->
 
              <a href="#input-section" class="herobutton">What's my drink?</a>
-             
-
-        </section>
+        </header>
 
     
-        <section id="input-section" class="input-section">
-            <section>
+        <main id="input-section" class="input-section">
+            <!-- <section> -->
                 <a href="#" class="back-to-top">Back to top</a>
-            </section>
+            <!-- </section> -->
 
             <form>
                 <fieldset>
                     <legend>What's your mood today?</legend>
-                        <section class="mood-buttons">
+                        <div class="mood-buttons">
                             <button type="button" id="bold">Bold</button>
                             <button type="button" id="warmandcozy">Warm and cozy</button>
                             <button type="button" id="joyful">Joyful</button>
                             <button type="button" id="freshandalive">Fresh and alive</button>
                             <button type="button" id="dreamy">Dreamy</button>
-                        </section>
+                        </div>   
+                </fieldset> 
+                              
+                <fieldset>
+                        <div class="slider-container">
+                            <label for="intensity">Please drag the slider to select how strong you want your drink to be</label>
+                            <input type="range" id="intensity" min="1" max="3">
 
-                    <div class="slider-container">
-                        <label for="intensity">Please drag the slider to select how strong you want your drink to be</label>
-                        <input type="range" id="intensity" min="1" max="3">
-                        <!-- <datalist id="intensity-marks">
-                            <option value="1"></option>
-                            <option value="2"></option>
-                            <option value="3"></option>
-                        </datalist> -->
-
-                        <div class="slider-label">
-                            <span>Light</span>
-                            <!-- <span>Pure</span> -->
-                            <span>Intense</span>
+                            <div class="slider-label">
+                                <span>Light</span>
+                                <span>Intense</span>
+                            </div>
                         </div>
-                    </div>
+                </fieldset>
                     
-                    <section>
-                        <button type="submit" class="submit-button" disabled>Find my drink</button>
-                    </section>
+                    <!-- <section> -->
+                <button type="submit" class="submit-button" disabled>Find my drink</button>
+                    <!-- </section> -->
                 </fieldset>
             </form>
-        </section>
+        </main>
 
         <ul id="mood"></ul>
 
