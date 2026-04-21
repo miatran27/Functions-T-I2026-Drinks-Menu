@@ -2,7 +2,7 @@
   font-size: 100%;
   font-family: "DM Sans", sans-serif;
 	--background-color: #FAF6EE;
-  --body-color: #291d17;
+  --hero-color: #291d17;
   --base: 1rem;
   --padding: var(--base);
   --h2: 2rem;
@@ -10,12 +10,17 @@
   --border: calc(var(--base) / 8); 
   --font-heading: "Cormorant Garamond", serif;
   --slider-width: 20rem;
+  --bold: #7B1F1F;
+  --warmandcozy: #9B4A00;
+  --joyful: #ddd41e;
+  --freshandalive: #2c4a2e;
+  --dreamy: #4A2458;
 }
 
 body {
     background-color: var(--background-color);
     margin: 0;
-    color: var(--body-color);
+    color: var(--hero-color);
     caret-color: transparent;
   }
 
@@ -113,7 +118,7 @@ dialog {
 .drink-ingredients {
   padding-block-end: calc(2* var(--base));
   opacity: 65%;
-  color: var(--body-color);
+  color: var(--hero-color);
 }
 
 
@@ -127,7 +132,7 @@ form legend {
   text-align: center;
   padding-block-end: calc(2 * var(--base));
   font-size: var(--h2);
-  color: var(--body-color);
+  color: var(--hero-color);
 }
 
 .slider-container {
@@ -190,7 +195,7 @@ form legend {
   margin-inline: auto;
   width: fit-content;
   padding: var(--base) calc(2 * var(--base));
-  background: var(--body-color);  
+  background: var(--hero-color);  
   color: var(--background-color);
   border-radius: 0;
   cursor: pointer;
@@ -205,7 +210,7 @@ form legend {
 
 /* Styling the hero */
 .hero {
-  background-color: var(--body-color);
+  background-color: var(--hero-color);
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -242,7 +247,7 @@ form legend {
 
   em {
     font-style: italic;
-    color: #ae8407;
+    color: var(--joyful);
   }
 
   p {
@@ -281,7 +286,7 @@ form legend {
   width: fit-content;
   text-decoration: none;
   cursor: pointer;
-  color: var(--body-color);
+  color: var(--hero-color);
   font-size: var(--to-top-button);
 }
 
@@ -332,11 +337,11 @@ html {
   color: white;
 }
 
- #bold { background-color: #7B1F1F; }
- #warmandcozy { background-color: #9B4A00; }
- #joyful { background-color: #ddd41e; }
- #freshandalive { background-color:  #2C4A2E; }
- #dreamy { background-color: #4A2458; }
+ #bold { background-color: var(--bold); }
+ #warmandcozy { background-color: var(--warmandcozy); }
+ #joyful { background-color: var(--joyful); }
+ #freshandalive { background-color: var(--freshandalive); }
+ #dreamy { background-color: var(--dreamy); }
 }
 
 
@@ -345,11 +350,11 @@ html {
   outline: calc(var(--border) * 2) solid;
   outline-offset: calc(var(--base) / 4);
 
-  &#bold { outline-color: #7B1F1F; }
-  &#warmandcozy { outline-color: #9B4A00; }
-  &#joyful { outline-color: #ddd41e; }
-  &#freshandalive { outline-color: #2C4A2E; }
-  &#dreamy { outline-color: #4A2458; }
+  &#bold { outline-color: var(--bold); }
+  &#warmandcozy { outline-color: var(--warmandcozy); }
+  &#joyful { outline-color: var(--joyful); }
+  &#freshandalive { outline-color: var(--freshandalive); }
+  &#dreamy { outline-color: var(--dreamy); }
 }
 
 
@@ -373,7 +378,7 @@ input[type="range"] {
 /* Styling the thumb of the slider */
   &::-webkit-slider-thumb {
     -webkit-appearance: none;
-    border: var(--border) solid var(--body-color);
+    border: var(--border) solid var(--hero-color);
     border-radius: 50%;
     height: calc(2 * var(--base));
     width: calc(2 * var(--base));
@@ -471,11 +476,10 @@ dialog {
     inset: calc(2 * var(--base));
   }
 
-.herotext p {
+  .herotext p {
   font-size: calc(1.5 * var(--base));
-  /* max-with: 30ch; */
+  }
 }
-
 }
 
 
@@ -500,7 +504,7 @@ dialog {
   }
 
   .drink-info {
-    border-right: calc(var(--border) / 2) solid var(--body-color);
+    border-right: calc(var(--border) / 2) solid var(--hero-color);
     padding-right: var(--base);
     justify-self: stretch;
   }
@@ -510,10 +514,11 @@ dialog {
   }
 
 
-  .hero {
+  /* .hero {
     &::after {
       inset: calc(3 * var(--base));
     }
+  } */
 }
 
 
