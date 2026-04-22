@@ -1,6 +1,5 @@
 :root {
   font-size: 100%;
-  /* font-family: "DM Sans", sans-serif; */
   font-family: "Proza Libre", sans-serif;
 	--background-color: #FAF6EE;
   --hero-color: #291d17;
@@ -133,7 +132,6 @@ form legend {
 
   label {
       display: block;
-      /* padding-block-start: calc(1.5 * var(--title-gap)); */
       padding-block-end: var(--title-gap);
       color: #1C1410;
       font-size: var(--base);
@@ -348,8 +346,6 @@ input[type="range"] {
     width: calc(2 * var(--base));
     background-color: white;
     cursor: grab;
-    /* transform: translateY(-25%); */
-    /* margin-top: calc((var(--base) / 2 - 2 * var(--base)) / 2) */
   }
 
 /* Same thing as the code above but styling that works for Firefox browser */
@@ -409,7 +405,6 @@ input[type="range"] {
   &::-webkit-slider-thumb {
   block-size: calc(2 * var(--base));
   inline-size: calc(2 * var(--base));
-  /* border: calc(2 * var(--border)) solid #8B3A1A; */
   }
 }
 
@@ -426,7 +421,7 @@ dialog {
     font-size: 4rem;
   }
 
-  .herotext p {
+  p {
   font-size: calc(1.5 * var(--base));
   }
 }
@@ -462,6 +457,5 @@ dialog {
 
   .drink-info {
     text-align: left;
-    /* padding-inline-start: 2rem; */
   }
 }

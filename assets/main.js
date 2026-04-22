@@ -127,6 +127,7 @@ backToTop.addEventListener('click', () => {
 
   selectedMood = null
   form.reset()
+  
 //   submitButton.setAttribute('disabled', '')
   buttons.forEach(otherButton => otherButton.classList.remove('selected'))
   submitButton.setAttribute('disabled', '')
