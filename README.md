@@ -1,0 +1,9 @@
+This was the first project that I've ever hand coded that carried out a function. One of the biggest differences that i had to consider compared to past projects was actually the user experience because there are different steps that the user needs to take to get to the output. Additionally, going from the output back to the was also something that I wanted to carefully consider for my web page. As I worked on this project, I thought of how a user would like to user this tool when they’re at a bar and about to oder, that helped me to think what makes sense to include in the user flow as they go through the web page.
+
+At the end, the fun part about this project is focusing on the one main function, and I’m glad that I was able to bring an idea that I’ve always wanted to do before (a fun digital menu) but make it a fun rich media experience.   Here are a few big things that I've learned:
+
+• Instead of a “no result” iteration screen, it’s better to help guide users early on to not land on that “no result” screen, so I set up the rule where the “submit” button is not clickable when the input is not filled
+• Tie it to the design system to build my CSS variables
+• More CSS nesting to implement the DRY method feedback
+• Use more fun terms for the buttons that ties to the story of the web page
+• I’ve also found it challenging to keep the whole web page’s design cohesive throughout, especially when I have 3 different screens (hero, form section, modal) to showcase throughout the user experience. As a next step and reminder, briefly style this out on Figma to see the whole page in one long mockup and could help me imagine the whole web page as a whole and tie the design system together.
